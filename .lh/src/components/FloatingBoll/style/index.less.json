@@ -1,0 +1,366 @@
+{
+    "sourceFile": "src/components/FloatingBoll/style/index.less",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 87,
+            "patches": [
+                {
+                    "date": 1636438549600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1636438555448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,8 @@\n     @boll-size();\n \n     &:hover{\n         transform: scale(1.1);\n-        visi\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1636438576021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n     @boll-size();\n \n     &:hover{\n         transform: scale(1.1);\n+        vsi\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1636438584768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,8 @@\n     @boll-size();\n \n     &:hover{\n         transform: scale(1.1);\n-        vsi\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1636448260077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // 默认尺寸\n @prefix: 'SnowBoll';\n \n @FloatingBollPrefix: ~'@{prefix}-floating-boll';\n-@transition-time: 0.5s;\n+@transition-time: 0.2s;\n @top: 80%;\n @right: 15%;\n @boll-size: {\n     &-small{\n"
+                },
+                {
+                    "date": 1636448272587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // 默认尺寸\n @prefix: 'SnowBoll';\n \n @FloatingBollPrefix: ~'@{prefix}-floating-boll';\n-@transition-time: 0.2s;\n+@transition-time: 0.5s;\n @top: 80%;\n @right: 15%;\n @boll-size: {\n     &-small{\n"
+                },
+                {
+                    "date": 1636455184255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n     background-size: cover;\n     @boll-position();\n     @boll-size();\n \n+    \n     &:hover{\n         transform: scale(1.1);\n     }\n }\n"
+                },
+                {
+                    "date": 1636455189485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,11 @@\n     background-size: cover;\n     @boll-position();\n     @boll-size();\n \n-    \n+    &-parent{\n+        \n+    }\n     &:hover{\n         transform: scale(1.1);\n     }\n }\n"
+                },
+                {
+                    "date": 1636455195659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,11 @@\n     @boll-position();\n     @boll-size();\n \n     &-parent{\n-        \n+        z-index: 1;\n     }\n+\n     &:hover{\n         transform: scale(1.1);\n     }\n }\n"
+                },
+                {
+                    "date": 1637650987218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,8 @@\n     top: @top;\n     right: @right;\n }\n \n-\n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n"
+                },
+                {
+                    "date": 1637651276142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,11 @@\n     top: @top;\n     right: @right;\n }\n \n+.@{FloatingBollPrefix}\n+\n+\n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n"
+                },
+                {
+                    "date": 1637651282863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     top: @top;\n     right: @right;\n }\n \n-.@{FloatingBollPrefix}\n+.@{FloatingBollPrefix}-\n \n \n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n"
+                },
+                {
+                    "date": 1637651313895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     top: @top;\n     right: @right;\n }\n \n-.@{FloatingBollPrefix}-\n+.@{FloatingBollPrefix}-container\n \n \n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n"
+                },
+                {
+                    "date": 1637651321387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,16 +27,18 @@\n     top: @top;\n     right: @right;\n }\n \n-.@{FloatingBollPrefix}-container\n+.@{FloatingBollPrefix}-container{\n \n+}\n \n+\n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n-    @boll-position();\n+\n     @boll-size();\n \n     &-parent{\n         z-index: 1;\n"
+                },
+                {
+                    "date": 1637651339062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,17 +28,17 @@\n     right: @right;\n }\n \n .@{FloatingBollPrefix}-container{\n-\n+    @boll-position();\n }\n \n \n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n-\n+    position: relative;\n     @boll-size();\n \n     &-parent{\n         z-index: 1;\n"
+                },
+                {
+                    "date": 1637651350799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,16 +29,17 @@\n }\n \n .@{FloatingBollPrefix}-container{\n     @boll-position();\n+    @boll-size();\n }\n \n \n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n-    position: relative;\n+    position: absolute;\n     @boll-size();\n \n     &-parent{\n         z-index: 1;\n"
+                },
+                {
+                    "date": 1637651358941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n     @boll-size();\n-\n+    over\n     &-parent{\n         z-index: 1;\n     }\n \n"
+                },
+                {
+                    "date": 1637651366460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,10 @@\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n     @boll-size();\n-    over\n+\n+\n     &-parent{\n         z-index: 1;\n     }\n \n"
+                },
+                {
+                    "date": 1637655875424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n         height: $width;\n     }\n };\n \n+\n @boll-position:{\n     position: fixed;\n     top: @top;\n     right: @right;\n@@ -30,8 +31,9 @@\n \n .@{FloatingBollPrefix}-container{\n     @boll-position();\n     @boll-size();\n+    overflow: visible;\n }\n \n \n .@{FloatingBollPrefix}{\n@@ -39,10 +41,8 @@\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n     @boll-size();\n-\n-\n     &-parent{\n         z-index: 1;\n     }\n \n"
+                },
+                {
+                    "date": 1637655880957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,12 @@\n         height: $width;\n     }\n };\n \n+#1#ha{\n \n+}\n+\n @boll-position:{\n     position: fixed;\n     top: @top;\n     right: @right;\n"
+                },
+                {
+                    "date": 1637655890654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\n };\n \n #1#ha{\n-\n+    width:20px\n }\n \n @boll-position:{\n     position: fixed;\n"
+                },
+                {
+                    "date": 1637655910769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,10 +21,11 @@\n         height: $width;\n     }\n };\n \n-#1#ha{\n-    width:20px\n+#ha{\n+    width:20px;\n+    height:20px;\n }\n \n @boll-position:{\n     position: fixed;\n"
+                },
+                {
+                    "date": 1637655936587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         height: $width;\n     }\n };\n \n-#ha{\n+#ha#hei{\n     width:20px;\n     height:20px;\n }\n \n"
+                },
+                {
+                    "date": 1637655962281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         height: $width;\n     }\n };\n \n-#ha#hei{\n+#ha{\n     width:20px;\n     height:20px;\n }\n \n"
+                },
+                {
+                    "date": 1637656055286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         height: $width;\n     }\n };\n \n-#ha{\n+.ha{\n     width:20px;\n     height:20px;\n }\n \n"
+                },
+                {
+                    "date": 1637656074659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,12 +21,8 @@\n         height: $width;\n     }\n };\n \n-.ha{\n-    width:20px;\n-    height:20px;\n-}\n \n @boll-position:{\n     position: fixed;\n     top: @top;\n"
+                },
+                {
+                    "date": 1637662880515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n         height: $width;\n     }\n };\n \n-\n @boll-position:{\n     position: fixed;\n     top: @top;\n     right: @right;\n@@ -34,9 +33,8 @@\n     @boll-size();\n     overflow: visible;\n }\n \n-\n .@{FloatingBollPrefix}{\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n"
+                },
+                {
+                    "date": 1637674431441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,6 +48,21 @@\n         transform: scale(1.1);\n     }\n }\n \n+.@{FloatingBollPrefix}{\n+    transition: transform @transition-time;\n+    background-repeat: no-repeat;\n+    background-size: cover;\n+    position: absolute;\n+    @boll-size();\n+    &-parent{\n+        z-index: 1;\n+    }\n \n+    &:hover{\n+        transform: scale(1.1);\n+    }\n+}\n \n+\n+\n"
+                },
+                {
+                    "date": 1637674441377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n         transform: scale(1.1);\n     }\n }\n \n-.@{FloatingBollPrefix}{\n+.@{FloatingBollPrefix}-{\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n"
+                },
+                {
+                    "date": 1637674456428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,21 +48,10 @@\n         transform: scale(1.1);\n     }\n }\n \n-.@{FloatingBollPrefix}-{\n-    transition: transform @transition-time;\n-    background-repeat: no-repeat;\n-    background-size: cover;\n-    position: absolute;\n-    @boll-size();\n-    &-parent{\n-        z-index: 1;\n-    }\n+.@{FloatingBollPrefix}-anchor{\n \n-    &:hover{\n-        transform: scale(1.1);\n-    }\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637674590077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-\n+    wi\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637674595857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,10 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-    wi\n+    width: 100%;\n+    hei\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637674605199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,10 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n-    hei\n+    height: 50%;\n+    ba\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637674610515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n     height: 50%;\n-    ba\n+    background-color: aqua;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637675152574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     background-size: cover;\n     position: absolute;\n     @boll-size();\n     &-parent{\n-        z-index: 1;\n+        z-index: 2;\n     }\n \n     &:hover{\n         transform: scale(1.1);\n"
+                },
+                {
+                    "date": 1637675191367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n     overflow: visible;\n }\n \n .@{FloatingBollPrefix}{\n+    z-index: 1;\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n@@ -50,8 +51,9 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n+    z\n     height: 50%;\n     background-color: aqua;\n }\n \n"
+                },
+                {
+                    "date": 1637675199511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n-    z\n+    z-index: -1;\n     height: 50%;\n     background-color: aqua;\n }\n \n"
+                },
+                {
+                    "date": 1637675208954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n-    z-index: -1;\n+    position: relative;\n     height: 50%;\n     background-color: aqua;\n }\n \n"
+                },
+                {
+                    "date": 1637722242381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,8 @@\n     overflow: visible;\n }\n \n .@{FloatingBollPrefix}{\n-    z-index: 1;\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n"
+                },
+                {
+                    "date": 1637722258505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     background-size: cover;\n     position: absolute;\n     @boll-size();\n     &-parent{\n-        z-index: 2;\n+        z-index: 1;\n     }\n \n     &:hover{\n         transform: scale(1.1);\n"
+                },
+                {
+                    "date": 1637722277979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n+    z-index: a;\n     @boll-size();\n     &-parent{\n         z-index: 1;\n     }\n"
+                },
+                {
+                    "date": 1637722283568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n-    z-index: a;\n+    z-index: auto;\n     @boll-size();\n     &-parent{\n         z-index: 1;\n     }\n@@ -51,8 +51,9 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n+    z-index: 1;\n     position: relative;\n     height: 50%;\n     background-color: aqua;\n }\n"
+                },
+                {
+                    "date": 1637722299664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n-    z-index: auto;\n+    // z-index: auto;\n     @boll-size();\n     &-parent{\n         z-index: 1;\n     }\n@@ -51,9 +51,9 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n-    z-index: 1;\n+    z-index: -1;\n     position: relative;\n     height: 50%;\n     background-color: aqua;\n }\n"
+                },
+                {
+                    "date": 1637723718094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,8 @@\n     transition: transform @transition-time;\n     background-repeat: no-repeat;\n     background-size: cover;\n     position: absolute;\n-    // z-index: auto;\n     @boll-size();\n     &-parent{\n         z-index: 1;\n     }\n@@ -50,8 +49,10 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n+    background-repeat: no-repeat;\n+    background-size: cover;\n     width: 100%;\n     z-index: -1;\n     position: relative;\n     height: 50%;\n"
+                },
+                {
+                    "date": 1637723741034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,8 @@\n .@{FloatingBollPrefix}-anchor{\n     background-repeat: no-repeat;\n     background-size: cover;\n     width: 100%;\n-    z-index: -1;\n     position: relative;\n     height: 50%;\n     background-color: aqua;\n }\n"
+                },
+                {
+                    "date": 1637723763244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,8 @@\n     background-size: cover;\n     width: 100%;\n     position: relative;\n     height: 50%;\n-    background-color: aqua;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725684061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     background-repeat: no-repeat;\n-    background-size: cover;\n+    background-size: ;\n     width: 100%;\n     position: relative;\n     height: 50%;\n }\n"
+                },
+                {
+                    "date": 1637725696575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,12 +50,13 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     background-repeat: no-repeat;\n-    background-size: ;\n+\n     width: 100%;\n     position: relative;\n     height: 50%;\n+    \n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725727793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \n     width: 100%;\n     position: relative;\n     height: 50%;\n-    \n+    background-size: ;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725794481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \n     width: 100%;\n     position: relative;\n     height: 50%;\n-    background-size: ;\n+    background-size: 100%;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725809533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \n     width: 100%;\n     position: relative;\n     height: 50%;\n-    background-size: 100%;\n+    background-size: 50%;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725855301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \n .@{FloatingBollPrefix}-anchor{\n     background-repeat: no-repeat;\n \n-    width: 100%;\n+    width: 50%;\n     position: relative;\n     height: 50%;\n     background-size: 50%;\n }\n"
+                },
+                {
+                    "date": 1637725862709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \n     width: 50%;\n     position: relative;\n     height: 50%;\n-    background-size: 50%;\n+    \n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725870126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \n     width: 50%;\n     position: relative;\n     height: 50%;\n-    \n+    background-size: 50%;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725893300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,13 +50,12 @@\n }\n \n .@{FloatingBollPrefix}-anchor{\n     background-repeat: no-repeat;\n-\n     width: 50%;\n     position: relative;\n     height: 50%;\n-    background-size: 50%;\n+    background-size: cover;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637725948609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,8 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-    background-repeat: no-repeat;\n     width: 50%;\n     position: relative;\n     height: 50%;\n     background-size: cover;\n"
+                },
+                {
+                    "date": 1637734769614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,12 +49,11 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-    width: 50%;\n+    width: 100%;\n     position: relative;\n     height: 50%;\n-    background-size: cover;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637734796161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n     position: relative;\n     height: 50%;\n+    z\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735046192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,12 +49,13 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n+    backgroundSize: 'cover',\n     width: 100%;\n     position: relative;\n     height: 50%;\n-    z\n+    z-index: 1;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735055145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-    backgroundSize: 'cover',\n+    background-size: ,\n     width: 100%;\n     position: relative;\n     height: 50%;\n     z-index: 1;\n"
+                },
+                {
+                    "date": 1637735066929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-    background-size: ,\n+\n     width: 100%;\n     position: relative;\n     height: 50%;\n     z-index: 1;\n"
+                },
+                {
+                    "date": 1637735072352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,13 +49,13 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-\n     width: 100%;\n     position: relative;\n     height: 50%;\n     z-index: 1;\n+    background-size: 100%,\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735117080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n+    background\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735123313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n-    background\n+    background-color: \n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735144046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n-    background-color: \n+    background-color: ;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735155923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n-    background-color: ;\n+    background: yellow;\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735182201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n-    background: yellow;\n+\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735469720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n-\n+    \n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735478306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,11 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n-    \n+    &:hover{\n+        tra\n+    }\n }\n \n \n \n"
+                },
+                {
+                    "date": 1637735503405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     height: 50%;\n     z-index: 1;\n     background-size: 100%,\n     &:hover{\n-        tra\n+        transform: scale(1.1);\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1637735538753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,10 @@\n     width: 100%;\n     position: relative;\n     height: 50%;\n     z-index: 1;\n-    background-size: 100%,\n+    background-size: 100%;\n+    \n     &:hover{\n         transform: scale(1.1);\n     }\n }\n"
+                },
+                {
+                    "date": 1637735549380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,11 +54,12 @@\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%;\n-    \n+\n     &:hover{\n         transform: scale(1.1);\n+        ba\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1637735570932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,10 @@\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n-        transform: scale(1.1);\n-        ba\n+        transform: scale(1.3);\n+        background-color: aqua;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1637740434208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,8 @@\n     background-size: 100%;\n \n     &:hover{\n         transform: scale(1.3);\n-        background-color: aqua;\n     }\n }\n \n \n"
+                },
+                {
+                    "date": 1637740464750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-    width: 100%;\n+    width: 0;\n     position: relative;\n     height: 50%;\n     z-index: 1;\n     background-size: 100%;\n"
+                },
+                {
+                    "date": 1637740469990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,10 @@\n \n .@{FloatingBollPrefix}-anchor{\n     width: 0;\n     position: relative;\n-    height: 50%;\n+    height: 0;\n+    border: ;\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n"
+                },
+                {
+                    "date": 1637740486736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 0;\n     position: relative;\n     height: 0;\n-    border: ;\n+    border: 1;\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n"
+                },
+                {
+                    "date": 1637740492464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 0;\n     position: relative;\n     height: 0;\n-    border: 1;\n+    border: 100% ;\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n"
+                },
+                {
+                    "date": 1637740503591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,10 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 0;\n     position: relative;\n     height: 0;\n-    border: 100% ;\n+    border: 100% solid transparent;\n+    bor\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n"
+                },
+                {
+                    "date": 1637740510614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     width: 0;\n     position: relative;\n     height: 0;\n     border: 100% solid transparent;\n-    bor\n+    border-bottom: 100% s;\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n"
+                },
+                {
+                    "date": 1637740524428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 0;\n     position: relative;\n     height: 0;\n-    border: 100% solid transparent;\n-    border-bottom: 100% s;\n+    border: 10px solid transparent;\n+    border-bottom: 100% solid red;\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n"
+                },
+                {
+                    "date": 1637740552921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 0;\n     position: relative;\n     height: 0;\n-    border: 10px solid transparent;\n-    border-bottom: 100% solid red;\n+    border: 100% solid transparent;\n+    border-bottom: 10px solid red;\n     z-index: 1;\n     background-size: 100%;\n \n     &:hover{\n"
+                },
+                {
+                    "date": 1637740559930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     }\n }\n \n .@{FloatingBollPrefix}-anchor{\n-    width: 0;\n+    width: 100%;\n     position: relative;\n     height: 0;\n     border: 100% solid transparent;\n     border-bottom: 10px solid red;\n"
+                },
+                {
+                    "date": 1637741326340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n \n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n     position: relative;\n-    height: 0;\n+    height: 50%;\n     border: 100% solid transparent;\n     border-bottom: 10px solid red;\n     z-index: 1;\n     background-size: 100%;\n"
+                },
+                {
+                    "date": 1637741331872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,12 +52,10 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n     position: relative;\n     height: 50%;\n-    border: 100% solid transparent;\n-    border-bottom: 10px solid red;\n+\n     z-index: 1;\n-    background-size: 100%;\n \n     &:hover{\n         transform: scale(1.3);\n     }\n"
+                },
+                {
+                    "date": 1637741952907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,14 +52,11 @@\n .@{FloatingBollPrefix}-anchor{\n     width: 100%;\n     position: relative;\n     height: 50%;\n-\n+    \n     z-index: 1;\n \n-    &:hover{\n-        transform: scale(1.3);\n-    }\n }\n \n \n \n"
+                },
+                {
+                    "date": 1638155283180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     width: 100%;\n     position: relative;\n     height: 50%;\n     z-index: 1;\n-    #\n+    \n }\n \n \n \n"
+                },
+                {
+                    "date": 1638168341298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n     #ToTop{\n \n     }\n \n-    #ToBottom\n+    #ToBottom{}\n }\n \n \n \n"
+                }
+            ],
+            "date": 1636438549600,
+            "name": "Commit-0",
+            "content": "// 默认尺寸\n@prefix: 'SnowBoll';\n\n@FloatingBollPrefix: ~'@{prefix}-floating-boll';\n@transition-time: 0.5s;\n@top: 80%;\n@right: 15%;\n@boll-size: {\n    &-small{\n        width: 15px;\n        height: $width;\n    }\n       \n    &-middle{\n        width: 25px;\n        height: $width;\n    }\n    \n    &-large{\n        width: 35px;\n        height: $width;\n    }\n};\n\n@boll-position:{\n    position: fixed;\n    top: @top;\n    right: @right;\n}\n\n\n.@{FloatingBollPrefix}{\n    transition: transform @transition-time;\n    background-repeat: no-repeat;\n    background-size: cover;\n    @boll-position();\n    @boll-size();\n\n    &:hover{\n        transform: scale(1.1);\n        visi\n    }\n}\n\n\n\n"
+        }
+    ]
+}

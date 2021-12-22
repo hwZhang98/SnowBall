@@ -1,0 +1,38 @@
+{
+    "sourceFile": "tsconfig.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1638172719253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638172726153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n         \"target\": \"ES6\",\n         \"jsx\": \"react\",\n         \"moduleResolution\": \"node\",\n         \"typeRoots\": [\"node\", \"node_modules/@types\", \"./typings\"],\n-        \"allowJs\": false\n+        \"allowJs\": true,\n     },\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638172869756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,7 @@\n         \"jsx\": \"react\",\n         \"moduleResolution\": \"node\",\n         \"typeRoots\": [\"node\", \"node_modules/@types\", \"./typings\"],\n         \"allowJs\": true,\n+        \"che\"\n     },\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638174200851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,6 @@\n         \"jsx\": \"react\",\n         \"moduleResolution\": \"node\",\n         \"typeRoots\": [\"node\", \"node_modules/@types\", \"./typings\"],\n         \"allowJs\": true,\n-        \"che\"\n     },\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638174212584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,6 @@\n         \"target\": \"ES6\",\n         \"jsx\": \"react\",\n         \"moduleResolution\": \"node\",\n         \"typeRoots\": [\"node\", \"node_modules/@types\", \"./typings\"],\n-        \"allowJs\": true,\n     },\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638175482630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n         \"target\": \"ES6\",\n         \"jsx\": \"react\",\n         \"moduleResolution\": \"node\",\n         \"typeRoots\": [\"node\", \"node_modules/@types\", \"./typings\"],\n+        \"allowSyntheticDefaultImports\": true\n     },\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1638172719253,
+            "name": "Commit-0",
+            "content": "{\n    \"compilerOptions\": {\n        \"outDir\": \"./dist/\",\n        \"sourceMap\": true,\n        \"noImplicitAny\": true,\n        \"module\": \"ES6\",\n        \"target\": \"ES6\",\n        \"jsx\": \"react\",\n        \"moduleResolution\": \"node\",\n        \"typeRoots\": [\"node\", \"node_modules/@types\", \"./typings\"],\n        \"allowJs\": false\n    },\n}"
+        }
+    ]
+}

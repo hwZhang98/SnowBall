@@ -1,0 +1,57 @@
+.SnowBoll-floating-boll-container {
+  position: fixed;
+  top: 80%;
+  right: 15%;
+  overflow: visible;
+}
+.SnowBoll-floating-boll-container-small {
+  width: 15px;
+  height: 15px;
+}
+.SnowBoll-floating-boll-container-middle {
+  width: 25px;
+  height: 25px;
+}
+.SnowBoll-floating-boll-container-large {
+  width: 35px;
+  height: 35px;
+}
+.SnowBoll-floating-boll {
+  transition: transform 0.5s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.SnowBoll-floating-boll-small {
+  width: 15px;
+  height: 15px;
+}
+.SnowBoll-floating-boll-middle {
+  width: 25px;
+  height: 25px;
+}
+.SnowBoll-floating-boll-large {
+  width: 35px;
+  height: 35px;
+}
+.SnowBoll-floating-boll-parent {
+  z-index: 1;
+}
+.SnowBoll-floating-boll:hover {
+  transform: scale(1.1);
+}
+.SnowBoll-floating-boll-anchor {
+  width: 100%;
+  position: relative;
+  height: 50%;
+  display: block;
+  overflow: visible;
+  fill: blue;
+}
+.SnowBoll-floating-boll-anchor #ToTop {
+  fill: blue;
+}
+.SnowBoll-floating-boll-anchor #ToBottom {
+  fill: blue;
+}
+/*# sourceMappingURL=./index.css.map */

@@ -1,0 +1,71 @@
+// 默认尺寸
+@prefix: 'SnowBoll';
+
+@FloatingBollPrefix: ~'@{prefix}-floating-boll';
+@transition-time: 0.5s;
+@top: 80%;
+@right: 15%;
+@boll-size: {
+    &-small{
+        width: 15px;
+        height: $width;
+    }
+       
+    &-middle{
+        width: 25px;
+        height: $width;
+    }
+    
+    &-large{
+        width: 35px;
+        height: $width;
+    }
+};
+
+@boll-position:{
+    position: fixed;
+    top: @top;
+    right: @right;
+}
+
+.@{FloatingBollPrefix}-container{
+    @boll-position();
+    @boll-size();
+    overflow: visible;
+}
+
+.@{FloatingBollPrefix}{
+    transition: transform @transition-time;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    @boll-size();
+    &-parent{
+        z-index: 1;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.@{FloatingBollPrefix}-anchor{
+    width: 100%;
+    position: relative;
+    height: 50%;
+    display: block;
+    overflow: visible;
+    fill: blue;
+    #ToTop{
+        fill: blue;
+    }
+
+    #ToBottom{
+        fill: blue;
+    }
+}
+
+
+
+
+

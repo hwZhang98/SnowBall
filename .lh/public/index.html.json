@@ -3,44 +3,28 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 3,
             "patches": [
                 {
-                    "date": 1631157622901,
+                    "date": 1637927272994,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
                 },
                 {
-                    "date": 1631158921229,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,8 @@\n   <div id=\"root\"></div>\n   <noscript>\n     You need to enable JavaScript to run this app.\n   </noscript>\n+  sc\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                    "date": 1637927280129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+h\n\\ No newline at end of file\n"
                 },
                 {
-                    "date": 1631158928331,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n   <div id=\"root\"></div>\n   <noscript>\n     You need to enable JavaScript to run this app.\n   </noscript>\n-  sc\n+  <script src=\"\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                    "date": 1637927285378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-h\n\\ No newline at end of file\n+h5\n\\ No newline at end of file\n"
                 },
                 {
-                    "date": 1631158935501,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n   <div id=\"root\"></div>\n   <noscript>\n     You need to enable JavaScript to run this app.\n   </noscript>\n-  <script src=\"\"></script>\n+  <script src=\"./\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
-                },
-                {
-                    "date": 1631158942841,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n   <div id=\"root\"></div>\n   <noscript>\n     You need to enable JavaScript to run this app.\n   </noscript>\n-  <script src=\"./\"></script>\n+  <script src=\"../\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
-                },
-                {
-                    "date": 1631158948297,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n   <div id=\"root\"></div>\n   <noscript>\n     You need to enable JavaScript to run this app.\n   </noscript>\n-  <script src=\"../\"></script>\n+  <script src=\"../src/index.js\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
-                },
-                {
-                    "date": 1631165794123,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n   <div id=\"root\"></div>\n   <noscript>\n     You need to enable JavaScript to run this app.\n   </noscript>\n-  <script src=\"../src/index.js\"></script>\n+  <script src=\"../index.js\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
-                },
-                {
-                    "date": 1631165799414,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n   <div id=\"root\"></div>\n   <noscript>\n     You need to enable JavaScript to run this app.\n   </noscript>\n-  <script src=\"../index.js\"></script>\n+  <script src=\"../src/index.js\"></script>\n </body>\n \n </html>\n\\ No newline at end of file\n"
+                    "date": 1637927294687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,22 @@\n-h5\n\\ No newline at end of file\n+<!DOCTYPE html>\n+<html>\n+    <head>\n+        <meta charset=\"UTF-8\" />\n+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n+        <title>React Starter</title>\n+        <style>\n+            body{\n+                min-height: 100%;\n+                min-width: 100%;\n+                background-color: ghostwhite;\n+            }\n+        </style>\n+    </head>\n+\n+    <body>\n+        <div id=\"root\"></div>\n+        <noscript>\n+            You need to enable JavaScript to run this app.\n+        </noscript>\n+    </body>\n+</html>\n\\ No newline at end of file\n"
                 }
             ],
-            "date": 1631157622901,
+            "date": 1637927272994,
             "name": "Commit-0",
-            "content": "<!DOCTYPE html>\n<html>\n\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>React Starter</title>\n</head>\n\n<body>\n  <div id=\"root\"></div>\n  <noscript>\n    You need to enable JavaScript to run this app.\n  </noscript>\n</body>\n\n</html>"
+            "content": ""
         }
     ]
 }

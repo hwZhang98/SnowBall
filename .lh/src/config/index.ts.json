@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/config/index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1638169173871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638169179077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export const \n\\ No newline at end of file\n+export const size\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638169186385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-export const size\n\\ No newline at end of file\n+export const size_map = {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638169198150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n-export const size_map = {\n-    \n-}\n\\ No newline at end of file\n+export : {[index: string]:number} = {\n+    'small': 15,\n+    'middle': 25,\n+    'large': 35\n+};\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638169204489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export : {[index: string]:number} = {\n+export const size_map: {[index: string]:number} = {\n     'small': 15,\n     'middle': 25,\n     'large': 35\n };\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1638169173871,
+            "name": "Commit-0",
+            "content": "export const "
+        }
+    ]
+}

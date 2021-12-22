@@ -1,0 +1,22 @@
+{
+    "sourceFile": "test.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1637669019041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637669027758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n     constructor(name){\n         this.name = name;\n     }\n }\n-do\n+document.qu\n console.log(typeof Mi);\n \n console.log(1);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1637669019041,
+            "name": "Commit-0",
+            "content": "class Mi{\n    constructor(name){\n        this.name = name;\n    }\n}\ndo\nconsole.log(typeof Mi);\n\nconsole.log(1);"
+        }
+    ]
+}

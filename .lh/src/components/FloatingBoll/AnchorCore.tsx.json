@@ -1,0 +1,1218 @@
+{
+    "sourceFile": "src/components/FloatingBoll/AnchorCore.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 300,
+            "patches": [
+                {
+                    "date": 1637667451694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637667468741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n interface AnchorProps {\n     anchorList: Array<string>\n }\n \n-export const AnchorCo : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.anchorList.forEach()\n+export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n+    props.anchorList.forEach(anchor =)\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667475527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.anchorList.forEach(anchor =)\n+    props.anchorList.forEach(anchor =>)\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667483716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.anchorList.forEach(anchor =>)\n+    props.anchorList.forEach(anchor => )\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667495149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,12 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.anchorList.forEach(anchor => )\n+    const \n+    props.anchorList.forEach(anchor => {\n+\n+    })\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667502359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const \n+    const anchorList = {}\n     props.anchorList.forEach(anchor => {\n \n     })\n     const [anchorList, setList] = React.useState();\n"
+                },
+                {
+                    "date": 1637667512641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList = {}\n+    const anchorList = [];\n     props.anchorList.forEach(anchor => {\n \n     })\n     const [anchorList, setList] = React.useState();\n"
+                },
+                {
+                    "date": 1637667520728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     const anchorList = [];\n     props.anchorList.forEach(anchor => {\n-\n+        \n     })\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n"
+                },
+                {
+                    "date": 1637667622307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList = [];\n+    let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         \n     })\n     const [anchorList, setList] = React.useState();\n"
+                },
+                {
+                    "date": 1637667628330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList = [];\n+    \n     props.anchorList.forEach(anchor => {\n-        \n+        anchorList = [];\n     })\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n"
+                },
+                {
+                    "date": 1637667647342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     \n     props.anchorList.forEach(anchor => {\n-        anchorList = [];\n+        const anchorList = [];\n     })\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n"
+                },
+                {
+                    "date": 1637667759042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     \n     props.anchorList.forEach(anchor => {\n         const anchorList = [];\n-    })\n+    });\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667772165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     \n     props.anchorList.forEach(anchor => {\n         const anchorList = [];\n     });\n+    \n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667976608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     \n     props.anchorList.forEach(anchor => {\n-        const anchorList = [];\n+\n     });\n-    \n+\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668006360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    \n+    const anchorList = [];\n     props.anchorList.forEach(anchor => {\n-\n+        \n     });\n \n     const [anchorList, setList] = React.useState();\n     \n"
+                },
+                {
+                    "date": 1637668012236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     const anchorList = [];\n     props.anchorList.forEach(anchor => {\n-        \n+        anchorList.p\n     });\n \n     const [anchorList, setList] = React.useState();\n     \n"
+                },
+                {
+                    "date": 1637668021685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     const anchorList = [];\n     props.anchorList.forEach(anchor => {\n-        anchorList.p\n+        anchorList.push(`#${}`)\n     });\n \n     const [anchorList, setList] = React.useState();\n     \n"
+                },
+                {
+                    "date": 1637668032674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     const anchorList = [];\n     props.anchorList.forEach(anchor => {\n-        anchorList.push(`#${}`)\n+        anchorList.push(`#${anchor}`);\n     });\n \n-    const [anchorList, setList] = React.useState();\n+    const [, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668043701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     const anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-\n+    \n     const [, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668260490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList = [];\n+    let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-    \n+\n     const [, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668276859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-\n+    anchorList = Array()\n     const [, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668286230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-    anchorList = Array()\n+    anchorList = Array(document.querySelector(...ar))\n     const [, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668308218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList = [];\n+    let anchorList: = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-    anchorList = Array(document.querySelector(...ar))\n+    anchorList = Array(document.querySelector(...anchorList));\n     const [, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668313251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList: = [];\n+    let anchorList:Array = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n     anchorList = Array(document.querySelector(...anchorList));\n"
+                },
+                {
+                    "date": 1637668320160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList:Array = [];\n+    let anchorList:String[] = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n     anchorList = Array(document.querySelector(...anchorList));\n"
+                },
+                {
+                    "date": 1637668340102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList:String[] = [];\n+    let anchorList : A = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n     anchorList = Array(document.querySelector(...anchorList));\n"
+                },
+                {
+                    "date": 1637668858171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,13 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList : A = [];\n+    let anchorList : Array<any> = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-    anchorList = Array(document.querySelector(...anchorList));\n+    anchorList = ;\n     const [, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668864941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,12 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList : Array<any> = [];\n+    let anchorList : Array<s> = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-    anchorList = ;\n-    const [, setList] = React.useState();\n+    const [, setList] = React.useState(Array(document.querySelector(...anchorList)));\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637668874790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList : Array<s> = [];\n+    let anchorList : s = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n     const [, setList] = React.useState(Array(document.querySelector(...anchorList)));\n"
+                },
+                {
+                    "date": 1637668881055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList : s = [];\n+    let anchorList : string[] = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-    const [, setList] = React.useState(Array(document.querySelector(...anchorList)));\n+    const [a, setList] = React.useState(Array(document.querySelector(...anchorList)));\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669203504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     let anchorList : string[] = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(`#${anchor}`);\n     });\n-    const [a, setList] = React.useState(Array(document.querySelector(...anchorList)));\n+    const [a, setList] = React.useState(Array();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669210975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     let anchorList : string[] = [];\n     props.anchorList.forEach(anchor => {\n-        anchorList.push(`#${anchor}`);\n+        anchorList.push(document.querySelector(...anchorList)));\n     });\n     const [a, setList] = React.useState(Array();\n     \n     return (null)\n"
+                },
+                {
+                    "date": 1637669235197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList : string[] = [];\n+    let anchorList : E[] = [];\n     props.anchorList.forEach(anchor => {\n-        anchorList.push(document.querySelector(...anchorList)));\n+        anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [a, setList] = React.useState(Array();\n     \n     return (null)\n"
+                },
+                {
+                    "date": 1637669248743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList : E[] = [];\n+    let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [a, setList] = React.useState(Array();\n"
+                },
+                {
+                    "date": 1637669254154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [a, setList] = React.useState(Array();\n+    const [a, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669504497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [a, setList] = React.useState();\n+    const [a, setList] = React.useState(ac);\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669519443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [a, setList] = React.useState(ac);\n+    const [a, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669743594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [a, setList] = React.useState();\n+    const [anchr, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669751429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [anchr, setList] = React.useState();\n+    const [anchorIndex, seta] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669772465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n     let anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [anchorIndex, seta] = React.useState();\n+    const [anchorIndex, setIndex] = React.useState(0);\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637669822736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    let anchorList = [];\n+    cosnt anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(0);\n"
+                },
+                {
+                    "date": 1637672942999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    cosnt anchorList = [];\n+    const anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [anchorIndex, setIndex] = React.useState(0);\n+    const [anchorIndex, setIndex] = React.useState(anchorList);\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673036565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList = [];\n+    const anchorList : E = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(anchorList);\n"
+                },
+                {
+                    "date": 1637673044162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList : E = [];\n+    const anchorList : do = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(anchorList);\n"
+                },
+                {
+                    "date": 1637673049386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList : do = [];\n+    const anchorList :  = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(anchorList);\n"
+                },
+                {
+                    "date": 1637673061171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList :  = [];\n+    const anchorList : E = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(anchorList);\n"
+                },
+                {
+                    "date": 1637673067352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList : E = [];\n+    const anchorList : Element = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(anchorList);\n"
+                },
+                {
+                    "date": 1637673080741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList : Element = [];\n+    const anchorList : Element[] = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(anchorList);\n"
+                },
+                {
+                    "date": 1637673126674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     anchorList: Array<string>\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList : Element[] = [];\n+    const anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(anchorList);\n"
+                },
+                {
+                    "date": 1637673324204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,16 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n     anchorList: Array<string>\n+    size?: 'small' | 'middle' | 'large';\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     const anchorList = [];\n     props.anchorList.forEach(anchor => {\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n-    const [anchorIndex, setIndex] = React.useState(anchorList);\n+    const [anchorIndex, setIndex] = React.useState(0);\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673353654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n-    anchorList: Array<string>\n+    anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n"
+                },
+                {
+                    "date": 1637673503485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import * as React from \"react\";\n+import { Context } from \"./FloatingBoll\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637673514265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,13 @@\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(0);\n     \n+    let {\n+        size = 'middle',\n+        mainImg = Img,\n+        customStyle = {},\n+        direction = 'up',\n+        distance = 10\n+    } = context;\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673522040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,11 +14,11 @@\n     const [anchorIndex, setIndex] = React.useState(0);\n     \n     let {\n         size = 'middle',\n-        mainImg = Img,\n         customStyle = {},\n         direction = 'up',\n         distance = 10\n     } = context;\n+\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673537636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n         anchorList.push(document.querySelector(`#${anchor}`));\n     });\n     const [anchorIndex, setIndex] = React.useState(0);\n     \n+    const context = React.useContext(Context);\n     let {\n         size = 'middle',\n         customStyle = {},\n         direction = 'up',\n"
+                },
+                {
+                    "date": 1637673555239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n     \n     const context = React.useContext(Context);\n     let {\n         size = 'middle',\n-        customStyle = {},\n         direction = 'up',\n         distance = 10\n     } = context;\n \n"
+                },
+                {
+                    "date": 1637673763660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,6 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    return (null)\n+    return div\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673783097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,6 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    return div\n+    return (<div></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673789448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,7 @@\n         distance = 10\n     } = context;\n \n     return (<div></div>\n+        \n+        );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673795416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    return (<div></div>\n-        \n+    return (\n+        <div></div>\n+        <div></div>\n         );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673825165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    return (\n+    return ( <>\n         <div></div>\n         <div></div>\n         );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673830935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,7 @@\n \n     return ( <>\n         <div></div>\n         <div></div>\n+        </>\n         );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637673836751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,10 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    return ( <>\n+    return ( \n+        <>\n         <div></div>\n         <div></div>\n         </>\n         );\n"
+                },
+                {
+                    "date": 1637673845303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     } = context;\n \n     return ( \n         <>\n-        <div></div>\n-        <div></div>\n+            <div></div>\n+            <div></div>\n         </>\n-        );\n+    );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637674626642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n+import { FunctionBollProps, componentsPrefix } from \"./FloatingBoll\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637674635425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n-import { FunctionBollProps, componentsPrefix } from \"./FloatingBoll\";\n+import { componentsPrefix } from \"./FloatingBoll\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n@@ -22,9 +22,9 @@\n     } = context;\n \n     return ( \n         <>\n+            <div className></div>\n             <div></div>\n-            <div></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637674640839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     } = context;\n \n     return ( \n         <>\n-            <div className></div>\n+            <div className={c}></div>\n             <div></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637674646241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     } = context;\n \n     return ( \n         <>\n-            <div className={c}></div>\n+            <div className={componentsPrefix+'anchor'}></div>\n             <div></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637674651716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,8 @@\n \n     return ( \n         <>\n             <div className={componentsPrefix+'anchor'}></div>\n-            <div></div>\n+            <div componentsPrefix+'anchor'></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637674657764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,8 @@\n \n     return ( \n         <>\n             <div className={componentsPrefix+'anchor'}></div>\n-            <div componentsPrefix+'anchor'></div>\n+            <div className={componentsPrefix+'anchor'}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637675001842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,13 +7,13 @@\n     size?: 'small' | 'middle' | 'large';\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    const anchorList = [];\n-    props.anchorList.forEach(anchor => {\n-        anchorList.push(document.querySelector(`#${anchor}`));\n-    });\n-    const [anchorIndex, setIndex] = React.useState(0);\n+    // const anchorList = [];\n+    // props.anchorList.forEach(anchor => {\n+    //     anchorList.push(document.querySelector(`#${anchor}`));\n+    // });\n+    // const [anchorIndex, setIndex] = React.useState(0);\n     \n     const context = React.useContext(Context);\n     let {\n         size = 'middle',\n"
+                },
+                {
+                    "date": 1637675109904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     } = context;\n \n     return ( \n         <>\n-            <div className={componentsPrefix+'anchor'}></div>\n-            <div className={componentsPrefix+'anchor'}></div>\n+            <div className={componentsPrefix+'-anchor'}></div>\n+            <div className={componentsPrefix+'-anchor'}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637723046854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n \n+\n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n }\n"
+                },
+                {
+                    "date": 1637723053860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n+import {}\n \n-\n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n }\n"
+                },
+                {
+                    "date": 1637723074828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import {}\n+import {arrow}\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637723086250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import {arrow}\n+import arrowTop\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637723098694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import arrowTop\n+import arrowTop from 'public/img/文件夹.png';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637723104533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import arrowTop from 'public/img/文件夹.png';\n+import arrowTop from 'public/img/上箭头.png';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637723128959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n import arrowTop from 'public/img/上箭头.png';\n+import arrowTop from 'public/img/上箭头.png';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637723136769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n import arrowTop from 'public/img/上箭头.png';\n-import arrowTop from 'public/img/上箭头.png';\n+import arrowDown from 'public/img/下箭头.png';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1637723148846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,10 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n+\n+    \n     return ( \n         <>\n             <div className={componentsPrefix+'-anchor'}></div>\n             <div className={componentsPrefix+'-anchor'}></div>\n"
+                },
+                {
+                    "date": 1637723167792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n+    a\n \n-    \n     return ( \n         <>\n             <div className={componentsPrefix+'-anchor'}></div>\n             <div className={componentsPrefix+'-anchor'}></div>\n"
+                },
+                {
+                    "date": 1637723174738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,11 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    a\n+    arrowTopStyle = {\n+        \n+    }\n \n     return ( \n         <>\n             <div className={componentsPrefix+'-anchor'}></div>\n"
+                },
+                {
+                    "date": 1637723186448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,14 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    arrowTopStyle = {\n-        \n-    }\n+    const arrowTopStyle = {\n \n+    };\n+\n+    const arrowTopStyle\n+\n     return ( \n         <>\n             <div className={componentsPrefix+'-anchor'}></div>\n             <div className={componentsPrefix+'-anchor'}></div>\n"
+                },
+                {
+                    "date": 1637723194240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     const arrowTopStyle = {\n \n     };\n \n-    const arrowTopStyle\n+    const arrowDownStyle = \n \n     return ( \n         <>\n             <div className={componentsPrefix+'-anchor'}></div>\n"
+                },
+                {
+                    "date": 1637723205638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    const arrowTopStyle = {\n+    const arrowUpStyle = {\n \n     };\n \n     const arrowDownStyle = \n"
+                },
+                {
+                    "date": 1637723211230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import arrowTop from 'public/img/上箭头.png';\n+import arrowUp from 'public/img/上箭头.png';\n import arrowDown from 'public/img/下箭头.png';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n"
+                },
+                {
+                    "date": 1637723634713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,11 @@\n     const arrowUpStyle = {\n \n     };\n \n-    const arrowDownStyle = \n+    const arrowDownStyle = {\n+        \n+    }\n \n     return ( \n         <>\n             <div className={componentsPrefix+'-anchor'}></div>\n"
+                },
+                {
+                    "date": 1637723639904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,13 +23,13 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-\n+        backg\n     };\n \n     const arrowDownStyle = {\n-        \n+\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637723645053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backg\n+        backgroundI\n     };\n \n     const arrowDownStyle = {\n \n"
+                },
+                {
+                    "date": 1637723666940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundI\n+        backgroundImage: `url'\n     };\n \n     const arrowDownStyle = {\n \n"
+                },
+                {
+                    "date": 1637723679660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundImage: `url'\n+        backgroundImage: `url${arr}`\n     };\n \n     const arrowDownStyle = {\n \n"
+                },
+                {
+                    "date": 1637723687014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,13 +23,13 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundImage: `url${arr}`\n+        backgroundImage: `url${arrowUp}`\n     };\n \n     const arrowDownStyle = {\n-\n+        backgroundImage: `url${arrowUp}`\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637723693940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         backgroundImage: `url${arrowUp}`\n     };\n \n     const arrowDownStyle = {\n-        backgroundImage: `url${arrowUp}`\n+        backgroundImage: `url${arrowDown}`\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637723775448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     }\n \n     return ( \n         <>\n+            <div className={componentsPrefix+'-anchor'} s></div>\n             <div className={componentsPrefix+'-anchor'}></div>\n-            <div className={componentsPrefix+'-anchor'}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637723781248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     }\n \n     return ( \n         <>\n-            <div className={componentsPrefix+'-anchor'} s></div>\n+            <div className={componentsPrefix+'-anchor'} style={arr}></div>\n             <div className={componentsPrefix+'-anchor'}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637723790607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     }\n \n     return ( \n         <>\n-            <div className={componentsPrefix+'-anchor'} style={arr}></div>\n+            <div className={componentsPrefix+'-anchor'} style={arrow}></div>\n             <div className={componentsPrefix+'-anchor'}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637723799052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     }\n \n     return ( \n         <>\n-            <div className={componentsPrefix+'-anchor'} style={arrow}></div>\n-            <div className={componentsPrefix+'-anchor'}></div>\n+            <div className={componentsPrefix+'-anchor'} style={arrowUpStyle}></div>\n+            <div className={componentsPrefix+'-anchor'} style={}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637723836065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundImage: `url${arrowUp}`\n+        backgroundImage: `url(${arrowUp}`\n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url${arrowDown}`\n@@ -33,8 +33,8 @@\n \n     return ( \n         <>\n             <div className={componentsPrefix+'-anchor'} style={arrowUpStyle}></div>\n-            <div className={componentsPrefix+'-anchor'} style={}></div>\n+            <div className={componentsPrefix+'-anchor'} style={arrowDownStyle}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637723843027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,13 +23,13 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundImage: `url(${arrowUp}`\n+        backgroundImage: `url(${arrowUp})`\n     };\n \n     const arrowDownStyle = {\n-        backgroundImage: `url${arrowDown}`\n+        backgroundImage: `url(${arrowDown})`\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637725955281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundImage: `url(${arrowUp})`\n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url(${arrowDown})`\n"
+                },
+                {
+                    "date": 1637734710916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n+        backgroundImage: `url(${arrowUp})`\n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url(${arrowDown})`\n"
+                },
+                {
+                    "date": 1637734717292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         backgroundImage: `url(${arrowUp})`\n     };\n \n     const arrowDownStyle = {\n-        backgroundImage: `url(${arrowDown})`\n+        backgroundImage: `url(${arrowUp})`\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637734723218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,10 @@\n         backgroundImage: `url(${arrowUp})`\n     };\n \n     const arrowDownStyle = {\n-        backgroundImage: `url(${arrowUp})`\n+        backgroundImage: `url(${arrowUp})`,\n+        transform: 'translate'\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637734734981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url(${arrowUp})`,\n-        transform: 'translate'\n+        transform: 'sc()'\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637735009537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,13 +24,14 @@\n     } = context;\n \n     const arrowUpStyle = {\n         backgroundImage: `url(${arrowUp})`\n+        \n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url(${arrowUp})`,\n-        transform: 'sc()'\n+        transform: 'scaleY(-1)'\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637735016499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,11 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundImage: `url(${arrowUp})`\n-        \n+        backgroundImage: `url(${arrowUp})`,\n+        backg\n+\n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url(${arrowUp})`,\n"
+                },
+                {
+                    "date": 1637735021874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     } = context;\n \n     const arrowUpStyle = {\n         backgroundImage: `url(${arrowUp})`,\n-        backg\n+        backgroundS\n \n     };\n \n     const arrowDownStyle = {\n"
+                },
+                {
+                    "date": 1637735028965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,14 +24,15 @@\n     } = context;\n \n     const arrowUpStyle = {\n         backgroundImage: `url(${arrowUp})`,\n-        backgroundS\n+        backgroundSize: 'cover',\n \n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url(${arrowUp})`,\n+        backgroundSize: 'cover',\n         transform: 'scaleY(-1)'\n     }\n \n     return ( \n"
+                },
+                {
+                    "date": 1637735040942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n     } = context;\n \n     const arrowUpStyle = {\n         backgroundImage: `url(${arrowUp})`,\n-        backgroundSize: 'cover',\n \n+\n     };\n \n     const arrowDownStyle = {\n         backgroundImage: `url(${arrowUp})`,\n"
+                },
+                {
+                    "date": 1637741305516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,17 +23,14 @@\n         distance = 10\n     } = context;\n \n     const arrowUpStyle = {\n-        backgroundImage: `url(${arrowUp})`,\n \n \n     };\n \n     const arrowDownStyle = {\n-        backgroundImage: `url(${arrowUp})`,\n-        backgroundSize: 'cover',\n-        transform: 'scaleY(-1)'\n+\n     }\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1637741311388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     }\n \n     return ( \n         <>\n-            <div className={componentsPrefix+'-anchor'} style={arrowUpStyle}></div>\n-            <div className={componentsPrefix+'-anchor'} style={arrowDownStyle}></div>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}></div>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637741413122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,12 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}></div>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></div>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n+\n+                \n+            </svg>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637741483861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,10 +34,10 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n+                <polyline points=\"3 3, 3 28, 3 53\"></polyline>\n \n-                \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1637741490656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"3 3, 3 28, 3 53\"></polyline>\n+                <polyline points=\"3 3,  28, 3 15\"></polyline>\n \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1637741497583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"3 3,  28, 3 15\"></polyline>\n+                <polyline points=\"3 3, 18  15, 3 15\"></polyline>\n \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1637741554433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"3 3, 18  15, 3 15\"></polyline>\n+                <polyline points=\"10 3, 18 15, 3 15\"></polyline>\n \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1637741617570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"10 3, 18 15, 3 15\"></polyline>\n+                <polyline points=\"10 3, 25 15, 3 15\"></polyline>\n \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1637741646212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"10 3, 25 15, 3 15\"></polyline>\n+                <polyline points=\"10 10, 25 15, 3 15\"></polyline>\n \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1637741658710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"10 10, 25 15, 3 15\"></polyline>\n+                <polyline points=\"10 10, 25 10, 17.5 15\"></polyline>\n \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1637741676397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,10 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"10 10, 25 10, 17.5 15\"></polyline>\n-\n+                <polyline points=\"10 10, 25 10, 17.5 2\"></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1637742600023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"10 10, 25 10, 17.5 2\"></polyline>\n+                <polyline points=\"10 10, 25 10, 17.5 2\" fill=></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1637742606317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"10 10, 25 10, 17.5 2\" fill=></polyline>\n+                <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155220448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n+                <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155237112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n+                <polyline points=\"10 15, 25 10, 17.5 2\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155252272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline points=\"10 15, 25 10, 17.5 2\" fill='blue'></polyline>\n+                <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155267130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                <polyline id=\"points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155274863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline id=\"points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                <polyline id=\"top\" points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155361957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline id=\"top\" points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                <polyline class=\"top\" points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155367523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline class=\"top\" points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                <polyline className=\"top\" points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155373701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline className=\"top\" points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                <polyline className={} points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155632530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline className={} points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                <polyline  points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155765804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,10 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <polyline  points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                g\n+                <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155774435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                g\n+                <g> \n                 <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155784946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <g> \n+                <g> </g>\n                 <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155791631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <g> </g>\n+                <g id='top'> </g>\n                 <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155796854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id='top'> </g>\n-                <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155802499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,11 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <g id='top'> </g>\n+                <g id='top'>\n+                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline> \n+                </g>\n                 \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155818462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,11 +36,11 @@\n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id='top'>\n-                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline> \n+                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n+                    \n                 </g>\n-                \n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638155834838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id='top'>\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    \n+                    <line\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155850184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id='top'>\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line\n+                    <line   ></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155855326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id='top'>\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line   ></line>\n+                    <line   points=\"\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155885762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,11 +35,11 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <g id='top'>\n+                <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line   points=\"\"></line>\n+                    <line   points=\"10\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155891905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line   points=\"10\"></line>\n+                    <line   points=\"10 8, 25 8\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155899287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line   points=\"10 8, 25 8\"></line>\n+                    <line   points=\"10 8, 25 8\" fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638155908525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line   points=\"10 8, 25 8\" fill='blue'></line>\n+                    <line points=\"10 8, 25 8\" fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156021102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line points=\"10 8, 25 8\" fill='blue'></line>\n+                    <line x1=\"10 8, 25 8\" fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156029807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10 8, 25 8\" fill='blue'></line>\n+                    <line x1=\"10\"=\"10 8, 25 8\" fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156041170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\"=\"10 8, 25 8\" fill='blue'></line>\n+                    <line x1=\"10\" x2=\"10\" y1=\"10\" y2=\"fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156047011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"10\" y1=\"10\" y2=\"fill='blue'></line>\n+                    <line x1=\"10\" x2=\"10\" y1=\"10\" y2=\"\"fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156053794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"10\" y1=\"10\" y2=\"\"fill='blue'></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"10\" y2=\"\" fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156059008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"10\" y2=\"\" fill='blue'></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"\" fill='blue'></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156122794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"\" fill='blue'></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156224981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" fill></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156375961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" fill></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"  stroke=\"black\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638156393560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"  stroke=\"black\"></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"blue\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n         </>\n"
+                },
+                {
+                    "date": 1638157269936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,12 +36,15 @@\n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n                 <g id=\"top\">\n-                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='blue'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"blue\"></line>\n+                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}></svg>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n+\n+                \n+            </svg>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638157282200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,16 +35,20 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <g id=\"top\">\n+                <g id=\"Totop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n+                <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n+                <g id=\"top\">\n+                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n+                </g>\n \n-                \n             </svg>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638157290327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <g id=\"Totop\">\n+                <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n"
+                },
+                {
+                    "date": 1638157298883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n-                <g id=\"top\">\n+                <g id=\"ToBottom\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n \n"
+                },
+                {
+                    "date": 1638157338548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n-\n             </svg>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638157381555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n-                <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n+                <polyline points=\"10 10, 25 10, 17.5 15.5\" fill='blue'></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n"
+                },
+                {
+                    "date": 1638157408957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n-                <polyline points=\"10 10, 25 10, 17.5 15.5\" fill='blue'></polyline>\n+                <polyline points=\"10 7.5, 25 10, 17.5 15.5\" fill='blue'></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n"
+                },
+                {
+                    "date": 1638157435975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,11 +41,11 @@\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n-                <polyline points=\"10 7.5, 25 10, 17.5 15.5\" fill='blue'></polyline>\n+                <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" fill='blue'></polyline>\n                 <g id=\"ToBottom\">\n-                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n+                    <polyline points=\"10 2.5, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n         </>\n"
+                },
+                {
+                    "date": 1638157443384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" fill='blue'></polyline>\n                 <g id=\"ToBottom\">\n-                    <polyline points=\"10 2.5, 25 15, 17.5 8\" fill='red'></polyline>\n+                    <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n         </>\n"
+                },
+                {
+                    "date": 1638157449326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" fill='blue'></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" fill='red'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638157546146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" fill='blue'></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" fill='red'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"8\" stroke=\"red\"></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"0\" y2=\"9.5\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638157662552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" fill='blue'></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" fill='red'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"0\" y2=\"9.5\" stroke=\"red\"></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638168298032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n-                <polyline points=\"10 10, 25 10, 17.5 2\" fill='blue'></polyline>\n+                <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n                 </g>\n"
+                },
+                {
+                    "date": 1638168303543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,10 @@\n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n-                    <polyline points=\"10 15, 25 15, 17.5 8\" fill='red'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" stroke=\"red\"></line>\n+                    <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" ></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" fill='blue'></polyline>\n"
+                },
+                {
+                    "date": 1638168309934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,12 +41,12 @@\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" ></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n-                <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" fill='blue'></polyline>\n+                <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n-                    <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" fill='red'></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\" stroke=\"red\"></line>\n+                    <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" ></polyline>\n+                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\" ></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638168513423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" ></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\" ></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638168635398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,13 +33,13 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle}>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} vi>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\" ></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n"
+                },
+                {
+                    "date": 1638168656669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} vi>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"\"}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n"
+                },
+                {
+                    "date": 1638168661949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"\"}>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"35\"}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n"
+                },
+                {
+                    "date": 1638168677483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"35\"}>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"0 0 35 17.5\"}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n"
+                },
+                {
+                    "date": 1638168683983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n                 </g>\n             </svg>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle}>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox={\"0 0 35 17.5\"}>\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\"></line>\n"
+                },
+                {
+                    "date": 1638168811322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"0 0 35 17.5\"}>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} >\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n"
+                },
+                {
+                    "date": 1638168817632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} >\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"0 0 35 17.5\"}>\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n"
+                },
+                {
+                    "date": 1638168829804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     }\n \n     return ( \n         <>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox={\"0 0 35 17.5\"}>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n"
+                },
+                {
+                    "date": 1638169396753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,13 +36,13 @@\n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n-                    <polyline points=\"10 15, 25 15, 17.5 8\" ></polyline>\n+                    <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n                 </g>\n             </svg>\n-            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox={\"0 0 35 17.5\"}>\n+            <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\"></line>\n"
+                },
+                {
+                    "date": 1638169423015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n-                    <polyline points=\"10 2.5, 25 2.5, 17.5 9.5\" ></polyline>\n+                    <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n                     <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\"></line>\n                 </g>\n             </svg>\n         </>\n"
+                },
+                {
+                    "date": 1638169496996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"8\" y2=\"8\"></line>\n+                    <line x1=\"10\" x2=\"25\" y1=\"7\" y2=\"8\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n"
+                },
+                {
+                    "date": 1638169506948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"7\" y2=\"8\"></line>\n+                    <line x1=\"10\" x2=\"25\"  y2=\"7\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n"
+                },
+                {
+                    "date": 1638169514101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" x2=\"25\"  y2=\"7\"></line>\n+                    <line x1=\"10\" y1=\"7\" x2=\"25\" y2=\"7\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n"
+                },
+                {
+                    "date": 1638169526586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" x2=\"25\" y1=\"9.5\" y2=\"9.5\"></line>\n+                    <line x1=\"10\" x2=\"25\" y2=\"9.5\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638169536111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" x2=\"25\" y2=\"9.5\"></line>\n+                    <line x1=\"10\" y1=\"10.5\" x2=\"25\" y2=\"9.5\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638169585558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,16 +37,16 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" y1=\"7\" x2=\"25\" y2=\"7\"></line>\n+                    <line x1=\"10\" y1=\"8\" x2=\"25\" y2=\"7\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"10.5\" x2=\"25\" y2=\"9.5\"></line>\n+                    <line x1=\"10\" y1=\"10.5\" x2=\"25\" y2=\"10.5\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638169595266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,16 +37,16 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" y1=\"8\" x2=\"25\" y2=\"7\"></line>\n+                    <line x1=\"10\" y1=\"8\" x2=\"25\" y2=\"8\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"10.5\" x2=\"25\" y2=\"10.5\"></line>\n+                    <line x1=\"10\" y1=\"11.5\" x2=\"25\" y2=\"10.5\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638169613226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,16 +37,16 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" y1=\"8\" x2=\"25\" y2=\"8\"></line>\n+                    <line x1=\"10\" y1=\"6\" x2=\"25\" y2=\"8\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"11.5\" x2=\"25\" y2=\"10.5\"></line>\n+                    <line x1=\"10\" y1=\"11.5\" x2=\"25\" y2=\"11.5\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638169641828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" y1=\"6\" x2=\"25\" y2=\"8\"></line>\n+                    <line x1=\"10\" y1=\"6\" x2=\"26\" y2=\"6\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n"
+                },
+                {
+                    "date": 1638169647318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"11.5\" x2=\"25\" y2=\"11.5\"></line>\n+                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638169671184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n-                <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n+                <polyline points=\"9 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n                     <line x1=\"10\" y1=\"6\" x2=\"26\" y2=\"6\"></line>\n                 </g>\n"
+                },
+                {
+                    "date": 1638169736538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,11 +34,11 @@\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n-                <polyline points=\"9 10, 25 10, 17.5 2\" ></polyline>\n+                <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n-                    <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n+                    <polyline points=\"9 15, 25 15, 17.5 7\" ></polyline>\n                     <line x1=\"10\" y1=\"6\" x2=\"26\" y2=\"6\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n"
+                },
+                {
+                    "date": 1638169753372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n-                    <polyline points=\"9 15, 25 15, 17.5 7\" ></polyline>\n+                    <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n                     <line x1=\"10\" y1=\"6\" x2=\"26\" y2=\"6\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n"
+                },
+                {
+                    "date": 1638170429049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\"></line>\n+                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\" fill></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638170434558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\" fill></line>\n+                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\" st></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638170443548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\" st></line>\n+                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638170449310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" y1=\"6\" x2=\"26\" y2=\"6\"></line>\n+                    <line x1=\"10\" y1=\"6\" x2=\"26\" y2=\"6\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n"
+                },
+                {
+                    "date": 1638170462918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n                 <g id=\"ToTop\">\n                     <polyline points=\"10 15, 25 15, 17.5 7\" ></polyline>\n-                    <line x1=\"10\" y1=\"6\" x2=\"26\" y2=\"6\" stroke=\"red\"></line>\n+                    <line x1=\"10\" y1=\"6\" x2=\"25\" y2=\"6\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n"
+                },
+                {
+                    "date": 1638170483184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,17 +22,9 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    const arrowUpStyle = {\n-\n-\n-    };\n-\n-    const arrowDownStyle = {\n-\n-    }\n-\n+    \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n@@ -44,9 +36,9 @@\n             <svg className={componentsPrefix+'-anchor'} style={arrowDownStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 7.5, 25 7.5, 17.5 15.5\" ></polyline>\n                 <g id=\"ToBottom\">\n                     <polyline points=\"10 2.5, 25 2.5, 17.5 10.5\" ></polyline>\n-                    <line x1=\"10\" y1=\"11.5\" x2=\"26\" y2=\"11.5\" stroke=\"red\"></line>\n+                    <line x1=\"10\" y1=\"11.5\" x2=\"25\" y2=\"11.5\" stroke=\"red\"></line>\n                 </g>\n             </svg>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1638170501852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,17 @@\n         direction = 'up',\n         distance = 10\n     } = context;\n \n-    \n+    const arrowUpStyle = {\n+\n+\n+    }\n+\n+    const arrowDownStyle = {\n+\n+    }\n+\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n"
+                },
+                {
+                    "date": 1638171701912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import arrowUp from 'public/img/上箭头.png';\n-import arrowDown from 'public/img/下箭头.png';\n-\n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n }\n"
+                },
+                {
+                    "date": 1638172035943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n+import {}\n+\n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n }\n"
+                },
+                {
+                    "date": 1638172041909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import {}\n+import anmi\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638172056205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import anmi\n-\n+import import anime from 'animejs/lib/anime.es.js';\n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n }\n"
+                },
+                {
+                    "date": 1638172736474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import import anime from 'animejs/lib/anime.es.js';\n+import *anime from 'animejs/lib/anime.es.js';\n+\n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n }\n"
+                },
+                {
+                    "date": 1638172746601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import *anime from 'animejs/lib/anime.es.js';\n+import * as anime from 'animejs/lib/anime.es';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638172919474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from 'animejs/lib/anime.es';\n+import * as anime from 'animejs/lib/anime.es.js';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n@@ -20,9 +20,9 @@\n         size = 'middle',\n         direction = 'up',\n         distance = 10\n     } = context;\n-\n+    anime\n     const arrowUpStyle = {\n \n \n     }\n"
+                },
+                {
+                    "date": 1638172926052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n         size = 'middle',\n         direction = 'up',\n         distance = 10\n     } = context;\n-    anime\n     const arrowUpStyle = {\n \n \n     }\n"
+                },
+                {
+                    "date": 1638173011074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from 'animejs/lib/anime.es.js';\n+import * as anime from 'animejs;\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638173017168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from 'animejs;\n+import * as anime from '=\"animejs\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638173044535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from '=\"animejs\";\n+import * as anime from \"animejs.es.js\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638173083194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"animejs.es.js\";\n+import * as anime from \"animejs/lib/anime.es.js\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638173314149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \n     const arrowDownStyle = {\n \n     }\n-\n+    \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n"
+                },
+                {
+                    "date": 1638173319751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,17 @@\n \n     const arrowDownStyle = {\n \n     }\n-    \n+\n+    anime({\n+        targets: 'div',\n+        translateX: 250,\n+        rotate: '1turn',\n+        backgroundColor: '#FFF',\n+        duration: 800\n+    });\n+\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n"
+                },
+                {
+                    "date": 1638173350040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n     }\n \n     anime({\n-        targets: 'div',\n+        targets: ''.css-selector-demo .el'',\n         translateX: 250,\n         rotate: '1turn',\n         backgroundColor: '#FFF',\n         duration: 800\n"
+                },
+                {
+                    "date": 1638173369686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n     }\n \n     anime({\n-        targets: ''.css-selector-demo .el'',\n+        targets: ``,\n         translateX: 250,\n         rotate: '1turn',\n         backgroundColor: '#FFF',\n         duration: 800\n"
+                },
+                {
+                    "date": 1638173375437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n     }\n \n     anime({\n-        targets: ``,\n+        targets: `${componentsPrefix}`,\n         translateX: 250,\n         rotate: '1turn',\n         backgroundColor: '#FFF',\n         duration: 800\n"
+                },
+                {
+                    "date": 1638173380600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n     }\n \n     anime({\n-        targets: `${componentsPrefix}`,\n+        targets: `${componentsPrefix}-anchor #`,\n         translateX: 250,\n         rotate: '1turn',\n         backgroundColor: '#FFF',\n         duration: 800\n"
+                },
+                {
+                    "date": 1638173387498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n     }\n \n     anime({\n-        targets: `${componentsPrefix}-anchor #`,\n+        targets: `${componentsPrefix}-anchor #ToTop`,\n         translateX: 250,\n         rotate: '1turn',\n         backgroundColor: '#FFF',\n         duration: 800\n"
+                },
+                {
+                    "date": 1638173408913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\n \n     anime({\n         targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateX: 250,\n+        translateY: 250,\n         rotate: '1turn',\n         backgroundColor: '#FFF',\n         duration: 800\n     });\n"
+                },
+                {
+                    "date": 1638174019221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"animejs/lib/anime.es.js\";\n+import * as anime from \"animejs/lib/anime\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174175050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"animejs/lib/anime\";\n+// import * as anime from \"animejs/lib/anime.es.js\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174246740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-// import * as anime from \"animejs/lib/anime.es.js\";\n+import * as anime from \"animejs/lib/anime.es.js\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n@@ -29,15 +29,15 @@\n     const arrowDownStyle = {\n \n     }\n \n-    anime({\n-        targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateY: 250,\n-        rotate: '1turn',\n-        backgroundColor: '#FFF',\n-        duration: 800\n-    });\n+    // anime({\n+    //     targets: `${componentsPrefix}-anchor #ToTop`,\n+    //     translateY: 250,\n+    //     rotate: '1turn',\n+    //     backgroundColor: '#FFF',\n+    //     duration: 800\n+    // });\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n"
+                },
+                {
+                    "date": 1638174276461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"animejs/lib/anime.es.js\";\n+require('./empty.d.ts')\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n@@ -29,15 +29,15 @@\n     const arrowDownStyle = {\n \n     }\n \n-    // anime({\n-    //     targets: `${componentsPrefix}-anchor #ToTop`,\n-    //     translateY: 250,\n-    //     rotate: '1turn',\n-    //     backgroundColor: '#FFF',\n-    //     duration: 800\n-    // });\n+    anime({\n+        targets: `${componentsPrefix}-anchor #ToTop`,\n+        translateY: 250,\n+        rotate: '1turn',\n+        backgroundColor: '#FFF',\n+        duration: 800\n+    });\n \n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n"
+                },
+                {
+                    "date": 1638174282057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-require('./empty.d.ts')\n+const require('./empty.d.ts')\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174294415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-const require('./empty.d.ts')\n+const anime = require('animejs');\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174344004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-const anime = require('animejs');\n+import * as anime from \"animejs/lib/anime.es.js\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174585627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"animejs/lib/anime.es.js\";\n+import * as anime from \"animejs\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174922366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"animejs\";\n+import * as anime from \"import anime from 'animejs/lib/anime.es';\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174928081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"import anime from 'animejs/lib/anime.es';\";\n+import * as anime from \"animejs/lib/anime.es\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174958087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from \"animejs/lib/anime.es\";\n+import  anime from \"animejs/lib/anime.es\";\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638174998111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import  anime from \"animejs/lib/anime.es\";\n+import anime from 'animejs/lib/anime.es';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638175177960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import anime from 'animejs/lib/anime.es';\n+import anime from 'animejs';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638175184587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import anime from 'animejs';\n+import * as anime from 'animejs';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638175534782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import * as anime from 'animejs';\n+import  anime from 'animejs';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n"
+                },
+                {
+                    "date": 1638175555677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n import { Context } from \"./FloatingBoll\";\n import { componentsPrefix } from \"./FloatingBoll\";\n-import  anime from 'animejs';\n+import anime from 'animejs';\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n@@ -31,9 +31,9 @@\n     }\n \n     anime({\n         targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateY: 250,\n+        translateY: 450,\n         rotate: '1turn',\n         backgroundColor: '#FFF',\n         duration: 800\n     });\n"
+                },
+                {
+                    "date": 1638175609882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,9 @@\n     }\n \n     anime({\n         targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateY: 450,\n-        rotate: '1turn',\n-        backgroundColor: '#FFF',\n-        duration: 800\n+        translateX: 250\n     });\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1638175648880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\n \n     anime({\n         targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateX: 250\n+        translateX: 450\n     });\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1638175681413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\n \n     anime({\n         targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateX: 450\n+        translateX: 450px\n     });\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1638175694340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n \n     }\n \n     anime({\n-        targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateX: 450px\n+        targets: `${componentsPrefix}-anchor`,\n+        translateX: '450px'\n     });\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1638176026053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \n     }\n \n     anime({\n-        targets: `${componentsPrefix}-anchor`,\n+        targets: `.${componentsPrefix}-anchor`,\n         translateX: '450px'\n     });\n \n     return ( \n"
+                },
+                {
+                    "date": 1638176042163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\n \n     anime({\n         targets: `.${componentsPrefix}-anchor`,\n-        translateX: '450px'\n+        translateX: '10px'\n     });\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1638176047402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,10 @@\n \n     }\n \n     anime({\n-        targets: `.${componentsPrefix}-anchor`,\n-        translateX: '10px'\n+        targets: `${componentsPrefix}-anchor #ToTop`,\n+        translateX: 250\n     });\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1638252756872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n+    fu\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     // const anchorList = [];\n@@ -30,10 +31,10 @@\n \n     }\n \n     anime({\n-        targets: `${componentsPrefix}-anchor #ToTop`,\n-        translateX: 250\n+        targets: `.${componentsPrefix}-anchor #ToTop`,\n+        translateX: 25\n     });\n \n     return ( \n         <>\n"
+                },
+                {
+                    "date": 1638252762561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n interface AnchorProps {\n     anchorList?: Array<string>;\n     size?: 'small' | 'middle' | 'large';\n-    fu\n+    focus?: boolean;\n }\n \n export const AnchorCore : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     // const anchorList = [];\n"
+                },
+                {
+                    "date": 1638253785945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n     const arrowDownStyle = {\n \n     }\n \n+    \n     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25\n     });\n"
+                },
+                {
+                    "date": 1638253791077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     const arrowDownStyle = {\n \n     }\n \n-    \n+    useE\n     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25\n     });\n"
+                },
+                {
+                    "date": 1638253844708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,14 @@\n     const arrowDownStyle = {\n \n     }\n \n-    useE\n+    useEffect(() => {\n+        effect\n+        return () => {\n+            cleanup\n+        }\n+    }, [props.])\n     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25\n     });\n"
+                },
+                {
+                    "date": 1638253859858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,13 +31,11 @@\n \n     }\n \n     useEffect(() => {\n-        effect\n-        return () => {\n-            cleanup\n-        }\n-    }, [props.])\n+        if(focus)\n+        \n+    }, [props.focus])\n     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25\n     });\n"
+                },
+                {
+                    "date": 1638253875555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,10 @@\n \n     useEffect(() => {\n         if(focus)\n         \n-    }, [props.focus])\n+    }, [props.focus]);\n+    \n     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25\n     });\n"
+                },
+                {
+                    "date": 1638253892995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,13 +30,13 @@\n     const arrowDownStyle = {\n \n     }\n \n-    useEffect(() => {\n+    React.useEffect(() => {\n         if(focus)\n         \n     }, [props.focus]);\n-    \n+\n     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25\n     });\n"
+                },
+                {
+                    "date": 1638253899745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,11 @@\n \n     }\n \n     React.useEffect(() => {\n-        if(focus)\n+        if(focus){\n+            \n+        }\n         \n     }, [props.focus]);\n \n     anime({\n"
+                },
+                {
+                    "date": 1638253911292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n     }\n \n     React.useEffect(() => {\n-        if(focus){\n+        if(props.focus){\n             \n         }\n         \n     }, [props.focus]);\n"
+                },
+                {
+                    "date": 1638253949675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,17 +33,17 @@\n \n     React.useEffect(() => {\n         if(props.focus){\n             \n-        }\n-        \n-    }, [props.focus]);\n-\n     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25\n     });\n+        }\n+        \n+    }, [props.focus]);\n \n+\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n"
+                },
+                {
+                    "date": 1638253958495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,14 +32,13 @@\n     }\n \n     React.useEffect(() => {\n         if(props.focus){\n-            \n-    anime({\n-        targets: `.${componentsPrefix}-anchor #ToTop`,\n-        translateX: 25\n-    });\n-        }\n+            anime({\n+                targets: `.${componentsPrefix}-anchor #ToTop`,\n+                translateX: 25\n+            });\n+        }e\n         \n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638254266916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,9 @@\n             anime({\n                 targets: `.${componentsPrefix}-anchor #ToTop`,\n                 translateX: 25\n             });\n-        }e\n-        \n+        };\n     }, [props.focus]);\n \n \n     return ( \n"
+                },
+                {
+                    "date": 1638254281483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,10 @@\n \n     }\n \n     React.useEffect(() => {\n+        console.log(1);\n+        \n         if(props.focus){\n             anime({\n                 targets: `.${componentsPrefix}-anchor #ToTop`,\n                 translateX: 25\n"
+                },
+                {
+                    "date": 1638254439334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,10 @@\n         \n         if(props.focus){\n             anime({\n                 targets: `.${componentsPrefix}-anchor #ToTop`,\n-                translateX: 25\n+                translateX: 25,\n+                de\n             });\n         };\n     }, [props.focus]);\n \n"
+                },
+                {
+                    "date": 1638254470359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         if(props.focus){\n             anime({\n                 targets: `.${componentsPrefix}-anchor #ToTop`,\n                 translateX: 25,\n-                de\n+                delayfunction(el, i) { return i * 100; },\n             });\n         };\n     }, [props.focus]);\n \n"
+                },
+                {
+                    "date": 1638254501044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n         size = 'middle',\n         direction = 'up',\n         distance = 10\n     } = context;\n+    \n     const arrowUpStyle = {\n \n \n     }\n@@ -37,9 +38,9 @@\n         if(props.focus){\n             anime({\n                 targets: `.${componentsPrefix}-anchor #ToTop`,\n                 translateX: 25,\n-                delayfunction(el, i) { return i * 100; },\n+                delay: function(el, i) { return i * 100; },\n             });\n         };\n     }, [props.focus]);\n \n"
+                },
+                {
+                    "date": 1638256075482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         size = 'middle',\n         direction = 'up',\n         distance = 10\n     } = context;\n-    \n+\n     const arrowUpStyle = {\n \n \n     }\n@@ -38,9 +38,9 @@\n         if(props.focus){\n             anime({\n                 targets: `.${componentsPrefix}-anchor #ToTop`,\n                 translateX: 25,\n-                delay: function(el, i) { return i * 100; },\n+                \n             });\n         };\n     }, [props.focus]);\n \n"
+                },
+                {
+                    "date": 1638256084221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,13 +35,9 @@\n     React.useEffect(() => {\n         console.log(1);\n         \n         if(props.focus){\n-            anime({\n-                targets: `.${componentsPrefix}-anchor #ToTop`,\n-                translateX: 25,\n-                \n-            });\n+\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256090384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,14 @@\n     const arrowDownStyle = {\n \n     }\n \n+    const play =             anime({\n+        targets: `.${componentsPrefix}-anchor #ToTop`,\n+        translateX: 25,\n+        \n+    });\n+\n     React.useEffect(() => {\n         console.log(1);\n         \n         if(props.focus){\n"
+                },
+                {
+                    "date": 1638256108947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     const arrowDownStyle = {\n \n     }\n \n-    const play =             anime({\n+    const animplay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         \n     });\n"
+                },
+                {
+                    "date": 1638256131532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,12 @@\n     const arrowDownStyle = {\n \n     }\n \n-    const animplay = anime({\n+    const animationPlay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n-        \n+        autoplay: false,\n     });\n \n     React.useEffect(() => {\n         console.log(1);\n"
+                },
+                {
+                    "date": 1638256138369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n     React.useEffect(() => {\n         console.log(1);\n         \n         if(props.focus){\n-\n+            a\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256144245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n     React.useEffect(() => {\n         console.log(1);\n         \n         if(props.focus){\n-            a\n+            animationPlay.play();\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256152217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n         console.log(1);\n         \n         if(props.focus){\n             animationPlay.play();\n-        };\n+        }else;\n     }, [props.focus]);\n \n \n     return ( \n"
+                },
+                {
+                    "date": 1638256157485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,11 @@\n         console.log(1);\n         \n         if(props.focus){\n             animationPlay.play();\n-        }else;\n+        }else{\n+            animationPlay.re\n+        };\n     }, [props.focus]);\n \n \n     return ( \n"
+                },
+                {
+                    "date": 1638256167481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n         \n         if(props.focus){\n             animationPlay.play();\n         }else{\n-            animationPlay.re\n+            animationPlay.reverse()\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256264483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n         \n         if(props.focus){\n             animationPlay.play();\n         }else{\n-            animationPlay.reverse()\n+            animationPlay.reverse();\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256323489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n             animationPlay.play();\n         }else{\n             animationPlay.reverse();\n         };\n+        animationPlay.play();\n     }, [props.focus]);\n \n \n     return ( \n"
+                },
+                {
+                    "date": 1638256332700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,8 @@\n             animationPlay.play();\n         }else{\n             animationPlay.reverse();\n         };\n-        animationPlay.play();\n     }, [props.focus]);\n \n \n     return ( \n"
+                },
+                {
+                    "date": 1638256346135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n         console.log(1);\n         \n         if(props.focus){\n             animationPlay.play();\n+            animationPlay.reverse();\n         }else{\n             animationPlay.reverse();\n         };\n     }, [props.focus]);\n"
+                },
+                {
+                    "date": 1638256357975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,14 +39,14 @@\n     });\n \n     React.useEffect(() => {\n         console.log(1);\n-        \n+    \n         if(props.focus){\n             animationPlay.play();\n             animationPlay.reverse();\n         }else{\n-            animationPlay.reverse();\n+            animationPlay.play();\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256363893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         autoplay: false,\n     });\n \n     React.useEffect(() => {\n-        console.log(1);\n+        console.log(props.focus);\n     \n         if(props.focus){\n             animationPlay.play();\n             animationPlay.reverse();\n"
+                },
+                {
+                    "date": 1638256414658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n     const animationPlay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n+        easing: 'easeInOutSine'\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638256424797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,10 @@\n     const animationPlay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n-        easing: 'easeInOutSine'\n+        easing: 'easeInOutSine',\n+        lo\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638256430494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         easing: 'easeInOutSine',\n-        lo\n+        loop:true,\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638256697957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,8 @@\n     const animationPlay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n-        easing: 'easeInOutSine',\n         loop:true,\n     });\n \n     React.useEffect(() => {\n"
+                },
+                {
+                    "date": 1638256763417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,16 +36,16 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         loop:true,\n+        alternate\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n     \n         if(props.focus){\n             animationPlay.play();\n-            animationPlay.reverse();\n         }else{\n             animationPlay.play();\n         };\n     }, [props.focus]);\n"
+                },
+                {
+                    "date": 1638256770933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         loop:true,\n-        alternate\n+        dirction: alternate\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638256794106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,9 @@\n     const animationPlay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n-        loop:true,\n-        dirction: alternate\n+        dirction: 'alternate'\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638256894538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,10 @@\n     const animationPlay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n-        dirction: 'alternate'\n+        direction: 'alternate',\n+        de\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638256909961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,18 +36,18 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n-        de\n+        delay: 5000\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n     \n         if(props.focus){\n             animationPlay.play();\n         }else{\n-            animationPlay.play();\n+            animationPlay.re();\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256962762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,18 +36,18 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n-        delay: 5000\n+        enddelay: 5000\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n     \n         if(props.focus){\n             animationPlay.play();\n         }else{\n-            animationPlay.re();\n+            animationPlay.reverse();\n         };\n     }, [props.focus]);\n \n \n"
+                },
+                {
+                    "date": 1638256996339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n-        enddelay: 5000\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638257221326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n+        loop: true,\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638257303483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n         loop: true,\n+        easing: 'linear'\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638258242203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     React.useEffect(() => {\n         console.log(props.focus);\n     \n         if(props.focus){\n-            animationPlay.play();\n+            animationPlay.re();\n         }else{\n             animationPlay.reverse();\n         };\n     }, [props.focus]);\n"
+                },
+                {
+                    "date": 1638258306353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,17 +36,17 @@\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n-        loop: true,\n-        easing: 'linear'\n+        easing: 'linear',\n+        <audio src=\"\"></audio>\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n     \n         if(props.focus){\n-            animationPlay.re();\n+            animationPlay.reverse();\n         }else{\n             animationPlay.reverse();\n         };\n     }, [props.focus]);\n"
+                },
+                {
+                    "date": 1638258311737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n         easing: 'linear',\n-        <audio src=\"\"></audio>\n+        autoplay: false\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638258343851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n         easing: 'linear',\n-        autoplay: false\n+        autoPlay: true,\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638258349792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         translateX: 25,\n         autoplay: false,\n         direction: 'alternate',\n         easing: 'linear',\n-        autoPlay: true,\n+        autoplay: true,\n     });\n \n     React.useEffect(() => {\n         console.log(props.focus);\n"
+                },
+                {
+                    "date": 1638258493419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,11 @@\n     const arrowDownStyle = {\n \n     }\n \n-    const animationPlay = anime({\n+     anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n-        autoplay: false,\n         direction: 'alternate',\n         easing: 'linear',\n         autoplay: true,\n     });\n"
+                },
+                {
+                    "date": 1638258498792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     const arrowDownStyle = {\n \n     }\n \n-     anime({\n+    const animationPlay = anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         direction: 'alternate',\n         easing: 'linear',\n"
+                },
+                {
+                    "date": 1638258504225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,27 @@\n             animationPlay.reverse();\n         };\n     }, [props.focus]);\n \n+    \n+    const animationPlay = anime({\n+        targets: `.${componentsPrefix}-anchor #ToTop`,\n+        translateX: 25,\n+        direction: 'alternate',\n+        easing: 'linear',\n+        autoplay: true,\n+    });\n \n+    React.useEffect(() => {\n+        console.log(props.focus);\n+    \n+        if(props.focus){\n+            animationPlay.reverse();\n+        }else{\n+            animationPlay.reverse();\n+        };\n+    }, [props.focus]);\n+\n     return ( \n         <>\n             <svg className={componentsPrefix+'-anchor'} style={arrowUpStyle} viewBox=\"0 0 35 17.5\">\n                 <polyline points=\"10 10, 25 10, 17.5 2\" ></polyline>\n"
+                },
+                {
+                    "date": 1638258511265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n     //         animationPlay.reverse();\n     //     };\n     // }, [props.focus]);\n \n-anime({\n+    anime({\n         targets: `.${componentsPrefix}-anchor #ToTop`,\n         translateX: 25,\n         direction: 'alternate',\n         easing: 'linear',\n"
+                },
+                {
+                    "date": 1638260755024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n     // }, [props.focus]);\n \n \n     React.useEffect(() => {\n-        console.log(props.focus);\n+\n         anime({\n             targets: `.${componentsPrefix}-anchor #ToTop`,\n             translateX: 25,\n             direction: 'alternate',\n"
+                }
+            ],
+            "date": 1637667451694,
+            "name": "Commit-0",
+            "content": "import * as React from \"react\";\n\ninterface AnchorProps {\n    anchorList: Array<string>\n}\n\nexport const AnchorCo : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n    props.anchorList.forEach()\n    const [anchorList, setList] = React.useState();\n    \n    return (null)\n}"
+        }
+    ]
+}

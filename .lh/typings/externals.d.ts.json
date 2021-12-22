@@ -1,0 +1,38 @@
+{
+    "sourceFile": "typings/externals.d.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1638172982631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638172994832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n }\n \n declare module '*.png' \n \n-de\n\\ No newline at end of file\n+declare module 'anime.es.js'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638173007443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n }\n \n declare module '*.png' \n \n-declare module 'anime.es.js'\n\\ No newline at end of file\n+declare module 'anime'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638173098239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n }\n \n declare module '*.png' \n \n-declare module 'anime'\n\\ No newline at end of file\n+declare module 'animejs'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638173107657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,5 @@\n }\n \n declare module '*.png' \n \n-declare module 'animejs'\n\\ No newline at end of file\n+declare module 'animejs/lib/anime.es.js'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638174580548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,4 @@\n     export = resource;\n }\n \n declare module '*.png' \n-\n-declare module 'animejs/lib/anime.es.js'\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1638172982631,
+            "name": "Commit-0",
+            "content": "declare module '*.css' {\n    const resource: any;\n    export = resource;\n}\n\ndeclare module '*.png' \n\nde"
+        }
+    ]
+}

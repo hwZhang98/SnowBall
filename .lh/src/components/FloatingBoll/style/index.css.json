@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/FloatingBoll/style/index.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1637723630295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637725668953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,10 @@\n .SnowBoll-floating-boll:hover {\n   transform: scale(1.1);\n }\n .SnowBoll-floating-boll-anchor {\n+  background-repeat: no-repeat;\n   width: 100%;\n-  z-index: -1;\n   position: relative;\n   height: 50%;\n }\n /*# sourceMappingURL=./index.css.map */\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1637723630295,
+            "name": "Commit-0",
+            "content": ".SnowBoll-floating-boll-container {\n  position: fixed;\n  top: 80%;\n  right: 15%;\n  overflow: visible;\n}\n.SnowBoll-floating-boll-container-small {\n  width: 15px;\n  height: 15px;\n}\n.SnowBoll-floating-boll-container-middle {\n  width: 25px;\n  height: 25px;\n}\n.SnowBoll-floating-boll-container-large {\n  width: 35px;\n  height: 35px;\n}\n.SnowBoll-floating-boll {\n  transition: transform 0.5s;\n  background-repeat: no-repeat;\n  background-size: cover;\n  position: absolute;\n}\n.SnowBoll-floating-boll-small {\n  width: 15px;\n  height: 15px;\n}\n.SnowBoll-floating-boll-middle {\n  width: 25px;\n  height: 25px;\n}\n.SnowBoll-floating-boll-large {\n  width: 35px;\n  height: 35px;\n}\n.SnowBoll-floating-boll-parent {\n  z-index: 1;\n}\n.SnowBoll-floating-boll:hover {\n  transform: scale(1.1);\n}\n.SnowBoll-floating-boll-anchor {\n  width: 100%;\n  z-index: -1;\n  position: relative;\n  height: 50%;\n}\n/*# sourceMappingURL=./index.css.map */"
+        }
+    ]
+}

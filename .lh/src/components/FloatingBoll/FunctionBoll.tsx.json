@@ -1,0 +1,250 @@
+{
+    "sourceFile": "src/components/FloatingBoll/FunctionBoll.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 58,
+            "patches": [
+                {
+                    "date": 1636429491115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1636429559876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     parent?: boolean;\n     order?: number;\n     method?: string | object;\n }\n+console.log(1234);\n \n function translateWay(direction: string, order: number, size: string, distance: number) : string {\n     const size_map : {[index: string]:number} = {\n         'small': 15,\n@@ -29,9 +30,9 @@\n         'left': `translateX(-${base_dis*order})`,\n         'right': `translateX(${base_dis*order})`,\n \n     };\n-    return way_map[direction];asd\n+    return way_map[direction];\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n"
+                },
+                {
+                    "date": 1636430211486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n     parent?: boolean;\n     order?: number;\n     method?: string | object;\n }\n-console.log(1234);\n \n function translateWay(direction: string, order: number, size: string, distance: number) : string {\n     const size_map : {[index: string]:number} = {\n         'small': 15,\n"
+                },
+                {
+                    "date": 1636430326163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,10 +54,10 @@\n         transition: `translate ${props.order * 0.5}s`,\n         visibility: 'hidden',\n         transform: translateWay(direction, props.order, size, distance)\n     }\n+    if(!parent)\n \n-\n     return (\n         <div className={className} style={customStyle}>\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1636430334174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n         transition: `translate ${props.order * 0.5}s`,\n         visibility: 'hidden',\n         transform: translateWay(direction, props.order, size, distance)\n     }\n-    if(!parent)\n+    if(!proparent)\n \n     return (\n         <div className={className} style={customStyle}>\n         </div>\n"
+                },
+                {
+                    "date": 1636430342170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,11 @@\n         transition: `translate ${props.order * 0.5}s`,\n         visibility: 'hidden',\n         transform: translateWay(direction, props.order, size, distance)\n     }\n-    if(!proparent)\n+    if(!props.parent){\n+        \n+    }\n \n     return (\n         <div className={className} style={customStyle}>\n         </div>\n"
+                },
+                {
+                    "date": 1636430348009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n         visibility: 'hidden',\n         transform: translateWay(direction, props.order, size, distance)\n     }\n     if(!props.parent){\n-        \n+        customStyle\n     }\n \n     return (\n         <div className={className} style={customStyle}>\n"
+                },
+                {
+                    "date": 1636430370460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,12 +54,10 @@\n         transition: `translate ${props.order * 0.5}s`,\n         visibility: 'hidden',\n         transform: translateWay(direction, props.order, size, distance)\n     }\n-    if(!props.parent){\n-        customStyle\n-    }\n \n+\n     return (\n         <div className={className} style={customStyle}>\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1636437342039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,11 +50,9 @@\n     \n     customStyle = {\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n-        transition: `translate ${props.order * 0.5}s`,\n-        visibility: 'hidden',\n-        transform: translateWay(direction, props.order, size, distance)\n+        \n     }\n \n \n     return (\n"
+                },
+                {
+                    "date": 1636437347678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n+    if(pr)\n \n-\n     return (\n         <div className={className} style={customStyle}>\n         </div>\n     )\n"
+                },
+                {
+                    "date": 1636437353713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n-    if(pr)\n+    if(props.parent)\n \n     return (\n         <div className={className} style={customStyle}>\n         </div>\n"
+                },
+                {
+                    "date": 1636437362747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,14 @@\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n-    if(props.parent)\n+    if(props.parent){\n+        c\n+        transition: `translate ${props.order * 0.5}s`,\n+        visibility: 'hidden',\n+        transform: translateWay(direction, props.order, size, distance)\n+    }\n \n     return (\n         <div className={className} style={customStyle}>\n         </div>\n"
+                },
+                {
+                    "date": 1636437370197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,10 @@\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n     if(props.parent){\n-        c\n+        customStyle = {\\\n+            customStyle}\n         transition: `translate ${props.order * 0.5}s`,\n         visibility: 'hidden',\n         transform: translateWay(direction, props.order, size, distance)\n     }\n"
+                },
+                {
+                    "date": 1636437375446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,10 +53,10 @@\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n     if(props.parent){\n-        customStyle = {\\\n-            customStyle}\n+        customStyle = {\n+            ...customStyle}\n         transition: `translate ${props.order * 0.5}s`,\n         visibility: 'hidden',\n         transform: translateWay(direction, props.order, size, distance)\n     }\n"
+                },
+                {
+                    "date": 1636437381787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,12 +54,11 @@\n         \n     }\n     if(props.parent){\n         customStyle = {\n-            ...customStyle}\n-        transition: `translate ${props.order * 0.5}s`,\n-        visibility: 'hidden',\n-        transform: translateWay(direction, props.order, size, distance)\n+            ...customStyle\n+        }\n+\n     }\n \n     return (\n         <div className={className} style={customStyle}>\n"
+                },
+                {
+                    "date": 1636437417867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,11 +54,12 @@\n         \n     }\n     if(props.parent){\n         customStyle = {\n-            ...customStyle\n+            ...customStyle,\n+            transition: `translate ${props.order * 0.5}s`,\n+            transform: translateWay(direction, props.order, size, distance)\n         }\n-\n     }\n \n     return (\n         <div className={className} style={customStyle}>\n"
+                },
+                {
+                    "date": 1636437912722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n-    if(props.parent){\n+    if(props.parent &){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance)\n"
+                },
+                {
+                    "date": 1636437922271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n+    const \n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n@@ -52,9 +53,9 @@\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n-    if(props.parent &){\n+    if(props.parent && ){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance)\n"
+                },
+                {
+                    "date": 1636437927834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const \n+    const open\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636437936042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const open\n+    const childopen\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636437941683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const childopen\n+    const child_open = React.useState()\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636437947028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const child_open = React.useState()\n+    const child_open = React.useState(false);\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636438324144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const child_open = React.useState(false);\n+    const [child_open = React.useState(false);\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636438332776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const [child_open = React.useState(false);\n+    const [child_open, set] = React.useState(false);\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636438344771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const [child_open, set] = React.useState(false);\n+    const [open, setOpen] = React.useState(false);\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636438354134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n-    if(props.parent && ){\n+    if(props.parent && open){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance)\n"
+                },
+                {
+                    "date": 1636438401418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,10 @@\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n         \n     }\n+\n+    \n     if(props.parent && open){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n"
+                },
+                {
+                    "date": 1636438413879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,11 @@\n     \n     customStyle = {\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n-        \n     }\n \n-    \n+\n     if(props.parent && open){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n"
+                },
+                {
+                    "date": 1636438426137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n         backgroundImage: `url(${mainImg})`,\n     }\n \n \n-    if(props.parent && open){\n+    if(!props.parent && open){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance)\n"
+                },
+                {
+                    "date": 1636438518975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n     \n     customStyle = {\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n+        vi\n     }\n \n \n     if(!props.parent && open){\n"
+                },
+                {
+                    "date": 1636438526129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,17 +51,18 @@\n     \n     customStyle = {\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n-        vi\n+        visibility: 'hidden',\n     }\n \n \n     if(!props.parent && open){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n-            transform: translateWay(direction, props.order, size, distance)\n+            transform: translateWay(direction, props.order, size, distance),\n+            v\n         }\n     }\n \n     return (\n"
+                },
+                {
+                    "date": 1636438531865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n-            v\n+            visibi\n         }\n     }\n \n     return (\n"
+                },
+                {
+                    "date": 1636438540256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n     \n     customStyle = {\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n-        visibility: 'hidden',\n+    visi\n     }\n \n \n     if(!props.parent && open){\n"
+                },
+                {
+                    "date": 1636438561476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,18 +51,18 @@\n     \n     customStyle = {\n         ...customStyle,\n         backgroundImage: `url(${mainImg})`,\n-    visi\n+        visibility: 'hidden'\n     }\n \n \n     if(!props.parent && open){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n-            visibi\n+            visibility: vis\n         }\n     }\n \n     return (\n"
+                },
+                {
+                    "date": 1636438567650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n-            visibility: vis\n+            visibility: visible\n         }\n     }\n \n     return (\n"
+                },
+                {
+                    "date": 1636438645019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     customStyle?: React.CSSProperties;\n     parent?: boolean;\n     order?: number;\n     method?: string | object;\n+    \n }\n \n function translateWay(direction: string, order: number, size: string, distance: number) : string {\n     const size_map : {[index: string]:number} = {\n@@ -60,9 +61,9 @@\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n-            visibility: visible\n+            visibility: 'visible'\n         }\n     }\n \n     return (\n"
+                },
+                {
+                    "date": 1636438651262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     customStyle?: React.CSSProperties;\n     parent?: boolean;\n     order?: number;\n     method?: string | object;\n-    \n+    open?: boolean;\n }\n \n function translateWay(direction: string, order: number, size: string, distance: number) : string {\n     const size_map : {[index: string]:number} = {\n"
+                },
+                {
+                    "date": 1636438657380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,8 @@\n }\n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n-    const [open, setOpen] = React.useState(false);\n     let {\n         size = 'middle',\n         mainImg = Img,\n         customStyle = {},\n"
+                },
+                {
+                    "date": 1636438663522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n         visibility: 'hidden'\n     }\n \n \n-    if(!props.parent && open){\n+    if(!props.parent && proopen){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n"
+                },
+                {
+                    "date": 1636438875937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,25 +16,9 @@\n     method?: string | object;\n     open?: boolean;\n }\n \n-function translateWay(direction: string, order: number, size: string, distance: number) : string {\n-    const size_map : {[index: string]:number} = {\n-        'small': 15,\n-        'middle': 25,\n-        'large': 35\n-    };\n-    const base_dis:number = distance + size_map[size];\n-    const way_map : {[index: string]:string} = {\n-        'up': `translateY(${base_dis*order})`,\n-        'down': `translateY(-${base_dis*order})`,\n-        'left': `translateX(-${base_dis*order})`,\n-        'right': `translateX(${base_dis*order})`,\n \n-    };\n-    return way_map[direction];\n-}\n-\n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n     let {\n         size = 'middle',\n@@ -55,9 +39,9 @@\n         visibility: 'hidden'\n     }\n \n \n-    if(!props.parent && proopen){\n+    if(!props.parent && props.open){\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n"
+                },
+                {
+                    "date": 1636439247478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     parent?: boolean;\n     order?: number;\n     method?: string | object;\n     open?: boolean;\n+    onC\n }\n \n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n@@ -53,5 +54,22 @@\n         <div className={className} style={customStyle}>\n         </div>\n     )\n \n-};\n\\ No newline at end of file\n+};\n+\n+function translateWay(direction: string, order: number, size: string, distance: number) : string {\n+    const size_map : {[index: string]:number} = {\n+        'small': 15,\n+        'middle': 25,\n+        'large': 35\n+    };\n+    const base_dis:number = distance + size_map[size];\n+    const way_map : {[index: string]:string} = {\n+        'up': `translateY(${base_dis*order})`,\n+        'down': `translateY(-${base_dis*order})`,\n+        'left': `translateX(-${base_dis*order})`,\n+        'right': `translateX(${base_dis*order})`,\n+\n+    };\n+    return way_map[direction];\n+}\n"
+                },
+                {
+                    "date": 1636439265075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     parent?: boolean;\n     order?: number;\n     method?: string | object;\n     open?: boolean;\n-    onC\n+    onClick?:  React.MouseEventHandler<HTMLElement>;\n }\n \n \n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n"
+                },
+                {
+                    "date": 1636440223888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,20 +6,11 @@\n // 定义类名前缀\n const prefix = 'SnowBoll';\n const componentsPrefix = prefix + '-' + 'floating-boll';\n \n-export interface FunctionBollProps {\n-    size?: 'small' | 'middle' | 'large';\n-    mainImg?: string;\n-    customStyle?: React.CSSProperties;\n-    parent?: boolean;\n-    order?: number;\n-    method?: string | object;\n-    open?: boolean;\n-    onClick?:  React.MouseEventHandler<HTMLElement>;\n-}\n \n \n+\n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n     let {\n         size = 'middle',\n"
+                },
+                {
+                    "date": 1636440244098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import classNames from \"classnames\";\n import Img from \"public/img/抽屉.png\";\n import { Context } from \"./FloatingBoll\";\n \n+\n // 定义类名前缀\n const prefix = 'SnowBoll';\n const componentsPrefix = prefix + '-' + 'floating-boll';\n \n"
+                },
+                {
+                    "date": 1636440251241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import * as React from \"react\";\n import classNames from \"classnames\";\n import Img from \"public/img/抽屉.png\";\n import { Context } from \"./FloatingBoll\";\n+import {Function}\n \n-\n // 定义类名前缀\n const prefix = 'SnowBoll';\n const componentsPrefix = prefix + '-' + 'floating-boll';\n \n"
+                },
+                {
+                    "date": 1636440256686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,15 @@\n import * as React from \"react\";\n import classNames from \"classnames\";\n import Img from \"public/img/抽屉.png\";\n import { Context } from \"./FloatingBoll\";\n-import {Function}\n+import { FunctionBollProps } from \"./FloatingBoll\";\n \n // 定义类名前缀\n const prefix = 'SnowBoll';\n const componentsPrefix = prefix + '-' + 'floating-boll';\n \n \n-\n-\n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n     let {\n         size = 'middle',\n"
+                },
+                {
+                    "date": 1636440828662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n // 定义类名前缀\n const prefix = 'SnowBoll';\n const componentsPrefix = prefix + '-' + 'floating-boll';\n \n-\n export const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n     const context = React.useContext(Context);\n     let {\n         size = 'middle',\n@@ -31,8 +30,9 @@\n     }\n \n \n     if(!props.parent && props.open){\n+        if()\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n"
+                },
+                {
+                    "date": 1636440837818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\n \n \n     if(!props.parent && props.open){\n-        if()\n+        if(props.parent.)\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n"
+                },
+                {
+                    "date": 1636440843560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\n \n \n     if(!props.parent && props.open){\n-        if(props.parent.)\n+        if(props.main.)\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n"
+                },
+                {
+                    "date": 1636440849880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\n \n \n     if(!props.parent && props.open){\n-        if(props.main.)\n+        if(props.mainImg)\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n"
+                },
+                {
+                    "date": 1636440856080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,11 @@\n     }\n \n \n     if(!props.parent && props.open){\n-        if(props.mainImg)\n+        if(props.mainImg){\n+            childS\n+        }\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n             transform: translateWay(direction, props.order, size, distance),\n"
+                },
+                {
+                    "date": 1636440864234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n \n     if(!props.parent && props.open){\n         if(props.mainImg){\n-            childS\n+            childStyle = {}\n         }\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n"
+                },
+                {
+                    "date": 1636440872078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n \n     if(!props.parent && props.open){\n         if(props.mainImg){\n-            childStyle = {}\n+            childStyle = {...pr}\n         }\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n"
+                },
+                {
+                    "date": 1636440885229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n \n     if(!props.parent && props.open){\n         if(props.mainImg){\n-            childStyle = {...pr}\n+            childStyle = {...}\n         }\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n"
+                },
+                {
+                    "date": 1636440896958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \n \n     if(!props.parent && props.open){\n         if(props.mainImg){\n-            childStyle = {...}\n+            \n         }\n         customStyle = {\n             ...customStyle,\n             transition: `translate ${props.order * 0.5}s`,\n"
+                },
+                {
+                    "date": 1636443871788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,8 @@\n         backgroundImage: `url(${mainImg})`,\n         visibility: 'hidden'\n     }\n \n-\n     if(!props.parent && props.open){\n         if(props.mainImg){\n             \n         }\n"
+                },
+                {
+                    "date": 1636443918585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n         visibility: 'hidden'\n     }\n \n     if(!props.parent && props.open){\n+        const child\n         if(props.mainImg){\n             \n         }\n         customStyle = {\n"
+                },
+                {
+                    "date": 1636443924273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         visibility: 'hidden'\n     }\n \n     if(!props.parent && props.open){\n-        const childS\n+        const childStyle\n         if(props.mainImg){\n             \n         }\n         customStyle = {\n"
+                },
+                {
+                    "date": 1636456518587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     const childStyle = props.customStyle || {};\n     const img = props.mainImg || mainImg;\n     const display = props.parent ? 'visible' : 'hidden';\n \n-    const hanleClick = props.parent\n+    const hanleClick = props.parent \n     customStyle = {\n         ...customStyle,\n         ...childStyle,\n         backgroundImage: `url(${img})`,\n"
+                }
+            ],
+            "date": 1636429491115,
+            "name": "Commit-0",
+            "content": "import * as React from \"react\";\nimport classNames from \"classnames\";\nimport Img from \"public/img/抽屉.png\";\nimport { Context } from \"./FloatingBoll\";\n\n// 定义类名前缀\nconst prefix = 'SnowBoll';\nconst componentsPrefix = prefix + '-' + 'floating-boll';\n\nexport interface FunctionBollProps {\n    size?: 'small' | 'middle' | 'large';\n    mainImg?: string;\n    customStyle?: React.CSSProperties;\n    parent?: boolean;\n    order?: number;\n    method?: string | object;\n}\n\nfunction translateWay(direction: string, order: number, size: string, distance: number) : string {\n    const size_map : {[index: string]:number} = {\n        'small': 15,\n        'middle': 25,\n        'large': 35\n    };\n    const base_dis:number = distance + size_map[size];\n    const way_map : {[index: string]:string} = {\n        'up': `translateY(${base_dis*order})`,\n        'down': `translateY(-${base_dis*order})`,\n        'left': `translateX(-${base_dis*order})`,\n        'right': `translateX(${base_dis*order})`,\n\n    };\n    return way_map[direction];asd\n}\n\nexport const FunctionBoll : React.FunctionComponent<FunctionBollProps> = (props: FunctionBollProps) => {\n    const context = React.useContext(Context);\n    let {\n        size = 'middle',\n        mainImg = Img,\n        customStyle = {},\n        direction = 'up',\n        distance = 10\n    } = context;\n    \n    const className = classNames([\n        `${componentsPrefix}-${size}`,\n        componentsPrefix,\n    ]);\n    \n    customStyle = {\n        ...customStyle,\n        backgroundImage: `url(${mainImg})`,\n        transition: `translate ${props.order * 0.5}s`,\n        visibility: 'hidden',\n        transform: translateWay(direction, props.order, size, distance)\n    }\n\n\n    return (\n        <div className={className} style={customStyle}>\n        </div>\n    )\n\n};"
+        }
+    ]
+}

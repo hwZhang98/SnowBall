@@ -1,0 +1,166 @@
+{
+    "sourceFile": "src/components/FloatingBoll/Anchor.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 37,
+            "patches": [
+                {
+                    "date": 1637665028094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637665071827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-import * as React from \"react\";\n\\ No newline at end of file\n+import * as React from \"react\";\n+\n+interface \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665080722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import * as React from \"react\";\n \n-interface \n\\ No newline at end of file\n+interface A\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665087964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import * as React from \"react\";\n \n-interface A\n\\ No newline at end of file\n+interface AnchorP\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665098259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n import * as React from \"react\";\n \n-interface AnchorP\n\\ No newline at end of file\n+interface AnchorProps {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665154143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n-    \n+    color\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665160408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n-    color\n+    color: 'string',\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665172545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n-    color: 'string',\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665177988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n     \n-}\n\\ No newline at end of file\n+}\n+\n+ex\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665201335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n interface AnchorProps {\n     \n }\n \n-ex\n\\ No newline at end of file\n+export const A\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665207320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n interface AnchorProps {\n     \n }\n \n-export const A\n\\ No newline at end of file\n+export const Anchor :  = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665212952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n interface AnchorProps {\n     \n }\n \n-export const Anchor :  = \n\\ No newline at end of file\n+export const Anchor : React.FunctionComponent = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665219607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n interface AnchorProps {\n     \n }\n \n-export const Anchor : React.FunctionComponent = \n\\ No newline at end of file\n+export const Anchor : React.FunctionComponent<AnchorProps = \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665229198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,7 @@\n interface AnchorProps {\n     \n }\n \n-export const Anchor : React.FunctionComponent<AnchorProps = \n\\ No newline at end of file\n+export const Anchor : React.FunctionComponent<AnchorProps> = () => {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665239159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n interface AnchorProps {\n     \n }\n \n-export const Anchor : React.FunctionComponent<AnchorProps> = () => {\n-    \n+export const Anchor : React.FunctionComponent<AnchorProps> = (Pro) => {\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665247954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n interface AnchorProps {\n     \n }\n \n-export const Anchor : React.FunctionComponent<AnchorProps> = (Pro) => {\n+export const Anchor : React.FunctionComponent<AnchorProps> = (Props: A) => {\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665255507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n interface AnchorProps {\n     \n }\n \n-export const Anchor : React.FunctionComponent<AnchorProps> = (Props: A) => {\n+export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n \n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665263983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n \n-    \n+    return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665715407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-\n+    \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665725999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    \n+    const \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665731199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const \n+    const []\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665742078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const []\n+    const [a]\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637665747864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [a]\n+    const [anchorList]\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637666338026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [anchorList]\n+    const [anchorList, set]\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637666347903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [anchorList, set]\n+    const [anchorList, setList] \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637666422662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [anchorList, setList] \n+    const [anchorList, setList] = use\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637666428948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [anchorList, setList] = use\n+    const [anchorList, setList] = useS\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637666434380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [anchorList, setList] = useS\n+    const [anchorList, setList] = React.useState\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667327698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [anchorList, setList] = React.useState\n+    const [anchorList, setList] = React.useState({});\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667345359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n-    const [anchorList, setList] = React.useState({});\n+    const [anchorList, setList] = React.useState();\n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667355053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,7 @@\n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n     const [anchorList, setList] = React.useState();\n+    \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667360781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n interface AnchorProps {\n     \n }\n \n-export const Anchor : React.FunctionComponent<AnchorProps> = (Props: AnchorProps) => {\n+export const Anchor : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667370934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n+    props.\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667379519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.\n+    props.anchor\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667387331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.anchor\n+    props.anchorList.fore\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667392741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     \n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.anchorList.fore\n+    props.anchorList.f\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637667400196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n-    \n+    anchorList: A\n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n     props.anchorList.f\n"
+                },
+                {
+                    "date": 1637667405486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import * as React from \"react\";\n \n interface AnchorProps {\n-    anchorList: A\n+    anchorList: Array<string>\n }\n \n export const Anchor : React.FunctionComponent<AnchorProps> = (props: AnchorProps) => {\n-    props.anchorList.f\n+    props.anchorList.forEach\n     const [anchorList, setList] = React.useState();\n     \n     return (null)\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1637665028094,
+            "name": "Commit-0",
+            "content": "import * as React from \"react\";"
+        }
+    ]
+}
