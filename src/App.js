@@ -4,19 +4,21 @@ import LotteryTiger from './tiger.js';
 
 function App (){
     const [lottery, setlottery] = useState(null);
+    // 结束时间
+    const endTime = 3000;
     const menu = [
         '鱼香肉丝',
         '肉末茄子',
     ];
 
     useLayoutEffect(() => {
-        const lottery = new LotteryTiger(document.getElementById('js_toggle'), document.querySelectorAll('.roller')) // eslint-disable-line
+        const lottery = new LotteryTiger(document.getElementById('js_toggle'), document.querySelectorAll('.roller'), menu) // eslint-disable-line
         lottery.on('start',  () =>  {
-            setTimeout( () => {
-            var ret = [Math.round(Math.random() * 2)]
-            lottery.setResult(ret)
+            setTimeout(() => {
+                var ret = [Math.round(Math.random() * 2)]
+                lottery.setResult(ret)
         //            lottery.reset();
-            }, 1000)
+            }, endTime)
         })
         setlottery(lottery);
     }, [])

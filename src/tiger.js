@@ -3,9 +3,10 @@ import Events from './modules/events'
 import animationEnd from './modules/animationEnd'
 
 class LotteryTigerRoller {
-  constructor (elem) {
+  constructor (elem, menu) {
     this.elem = elem
     this.items = elem.children
+    this.menu = menu;
 
     // 克隆第一个节点 用于制作无限滚动效果
     this.elem.appendChild(this.items[0].cloneNode(true))
@@ -37,34 +38,34 @@ class LotteryTigerRoller {
     if (!this.height) this.height = this.items[0].clientHeight
     setTimeout(() => {
       if (this.state !== 1) return
-      this.elem.classList.remove('fx-roll')
-      this.elem.classList.add('fx-bounce')
-      this.elem.style.marginTop = -index * this.height + 'px'
-      animationEnd(this.elem, () => {
-        this.state = 0
-        this.elem.classList.remove('fx-bounce')
-        if (callback) callback.call(this, index)
-      })
+      if(typeof index ===  'string'){
+        const curIndex = this.menu.indexOf(index);
+      }
+        this.elem.classList.remove('fx-roll')
+        this.elem.classList.add('fx-bounce')
+        this.elem.style.marginTop = -index * this.height + 'px'
+        animationEnd(this.elem, () => {
+            this.state = 0
+            this.elem.classList.remove('fx-bounce')
+            if (callback) callback.call(this, index)
+        })
     }, timeout)
   }
 }
 
 class LotteryTiger extends Events {
-  constructor (toggle, rollers, options) {
+  constructor (toggle, rollers, menu, options) {
     super()
-
+    this.menu = menu;
     this.options = Object.assign({
-      interval: 300, // 每个roller间动画间隔
-      aniMinTime: 6000, // 动画执行最少时间
+      interval: 100, // 每个roller间动画间隔
+      aniMinTime: 3000, // 动画执行最少时间
       resize: true // roller大小是否是可变的
     }, options)
     this.toggle = toggle
 
     // 初始化滚轴
-    this.rollerQueue = []
-    for (let i = 0; i < rollers.length; i++) {
-      this.rollerQueue.push(new LotteryTigerRoller(rollers[i]))
-    }
+    this.rollerQueue = [new LotteryTigerRoller(rollers[0], this.menu)]    
 
     // 如果大小是可变的就绑定resize事件
     if (this.options.resize) {
@@ -84,25 +85,24 @@ class LotteryTiger extends Events {
 
   setResult (ret) {
     // 保证动画执行时间
-    const endTime = (new Date()).getTime()
-    setTimeout(() => {
-        this.rollerQueue[0].stop(ret[0],  
+    this.rollerQueue[0].stop(ret[0],  
         () => {
             this.toggle.classList.remove('z-active')
             this.trigger('end')
-        }, i * this.options.interval);
-    }, endTime - this._startTime > this.options.aniMinTime ? 0 : this.options.aniMinTime - (endTime - this._startTime))
+        }, 0);
   }
 
   draw () {
-    if (this.toggle.classList.contains('z-active')) return
-    if (this.has('start')) this.trigger('start')
-    this._startTime = (new Date()).getTime()
+    if (this.toggle.classList.contains('z-active')){
+        return
+    } 
+    if (this.has('start')) {
+        this.trigger('start')
+    }
+    this._startTime = (new Date()).getTime();
 
     this.toggle.classList.add('z-active')
-    for (let i = 0, l = this.rollerQueue.length; i < l; i++) {
-      this.rollerQueue[i].start(i * this.options.interval)
-    }
+    this.rollerQueue[0].start(0 * this.options.interval)
   }
 }
 
